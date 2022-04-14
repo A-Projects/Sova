@@ -1,5 +1,9 @@
 const { path } = require('@vuepress/utils')
 
+const pluginOrTheme = {
+  clientAppEnhanceFiles: path.resolve(__dirname, './clientAppEnhance.js'),
+}
+
 module.exports = {
   // site config
   lang: 'ru-RU',
@@ -16,7 +20,8 @@ module.exports = {
         collapsable: false,
         children: [
           '/components/input-text.md',
-          '/components/input-textarea.md'
+          '/components/input-textarea.md',
+          '/components/s-button.md'
         ]
       }
     ]
@@ -27,6 +32,7 @@ module.exports = {
       {
         components: {
           InputText: path.resolve(__dirname, '../../src/components/InputText.vue'),
+          SButton: path.resolve(__dirname, '../../src/components/SButton.vue'),
         },
       },
     ],
