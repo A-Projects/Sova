@@ -1,5 +1,6 @@
 const Size = {
     type: String,
+    default: undefined,
     validator: (x) => {
         return [
             'xs',
