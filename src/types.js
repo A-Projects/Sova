@@ -10,9 +10,30 @@ const Size = {
             'xl',
             'xxl'
         ].includes(x)
-    },
+    }
 };
 
+const ButtonSize = {
+    type: String,
+    default: undefined,
+    validator: (x) => {
+        return [
+            'sm',
+            'lg',
+        ].includes(x)
+    }
+};
+/*
+const Variant = {
+    type: String,
+    default: undefined,
+    required: false,
+    validator: (x) => {
+        return ['outline']
+            .includes(x)
+    }
+}
+*/
 const Shape = {
     type: String,
     validator: (x) => {
@@ -91,4 +112,4 @@ const TextColor = {
     },
 }
 
-export { Size, Shape, Color, Gradient, TextColor }
+export { Size, ButtonSize, Shape, Color, Gradient, TextColor }

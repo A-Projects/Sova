@@ -1,11 +1,17 @@
 <template>
-  <button class="btn" :class="[ 'btn-' + color, { 'btn-${size}': size }, { 'active': active, 'disabled': disabled } ]">
+  <component type="button" v-bind:is="link ? 'a' : 'button'" class="btn" :class="[
+    [ outline ? 'btn-outline-' + color : 'btn-' + color],
+    { ['btn-' + size]: size },
+    { ['text-' + nowrap]: nowrap },
+    { 'active': active },
+    { 'disabled': disabled }
+  ]">
     <slot/>
-  </button>
+  </component>
 </template>
 
 <script>
-import { Color, Size } from '../types.js'
+import {ButtonSize, Color} from '../types.js'
 
 export default {
   name: "SButton",
@@ -17,10 +23,26 @@ export default {
     },
     disabled: {
       type: Boolean,
+      default: false,
       required: false,
     },
-    color: Color,
-    size: Size,
+    outline: {
+      type: Boolean,
+      default: false,
+      required: false,
+    },
+    nowrap: {
+      type: Boolean,
+      default: false,
+      required: false,
+    },
+    link: {
+      type: Boolean,
+      default: false,
+      required: false,
+    },
+    size: ButtonSize,
+    color: Color
   }
 }
 </script>
