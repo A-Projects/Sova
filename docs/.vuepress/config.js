@@ -19,6 +19,7 @@ module.exports = {
         text: 'Компоненты',
         collapsable: true,
         children: [
+          '/components/s-accordion.md',
           '/components/s-link.md',
           '/components/s-button.md',
           '/components/s-button-group.md',
@@ -43,6 +44,12 @@ module.exports = {
       '@vuepress/register-components',
       {
         components: {
+          SAccordion: path.resolve(__dirname, '../../src/components/SAccordion.vue'),
+          SAccordionBody: path.resolve(__dirname, '../../src/components/SAccordionBody.vue'),
+          SAccordionButton: path.resolve(__dirname, '../../src/components/SAccordionButton.vue'),
+          SAccordionCollapse: path.resolve(__dirname, '../../src/components/SAccordionCollapse.vue'),
+          SAccordionHeader: path.resolve(__dirname, '../../src/components/SAccordionHeader.vue'),
+          SAccordionItem: path.resolve(__dirname, '../../src/components/SAccordionItem.vue'),
           SLink: path.resolve(__dirname, '../../src/components/SLink.vue'),
           SButton: path.resolve(__dirname, '../../src/components/SButton.vue'),
           SButtonGroup: path.resolve(__dirname, '../../src/components/SButtonGroup.vue'),
