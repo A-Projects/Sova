@@ -11,7 +11,7 @@
 import {ButtonSize} from '../types.js'
 
 export default {
-  name: "SButtonGroup",
+  name: 'SButtonGroup',
   props: {
     vertical: {
       type: Boolean,

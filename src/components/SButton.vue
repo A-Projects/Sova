@@ -14,7 +14,7 @@
 import {ButtonSize, Color} from '../types.js'
 
 export default {
-  name: "SButton",
+  name: 'SButton',
   props: {
     active: {
       type: Boolean,

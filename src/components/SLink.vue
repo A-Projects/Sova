@@ -12,7 +12,7 @@
 import {Size, Color} from '../types.js'
 
 export default {
-  name: "SLink",
+  name: 'SLink',
   props: {
     disabled: {
       type: Boolean,
