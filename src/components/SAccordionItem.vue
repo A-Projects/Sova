@@ -1,36 +1,41 @@
 <template>
-    <div class="accordion-item" :test="activeKey">
+    <div class="accordion-item">
         <slot/>
     </div>
 </template>
 
 <script>
 import {computed} from 'vue';
+import {v4 as uuidv4} from 'uuid';
 
 export default {
     name: 'SAccordionItem',
     props: {
         itemKey: {
             type: [Number, String],
-            default: undefined,
+            default() {
+                return uuidv4()
+            },
             require: false,
         },
     },
-    inject: ['alwaysOpen', 'activeKey', 'setActiveKey'],
+    inject: ['activeItemKeys', 'toogleItemKey'],
+    computed: {
+        active() {
+            return this.activeItemKeys.includes(this.itemKey)
+        }
+    },
     provide() {
         return {
-            'active': computed(() => {
-                return this.activeKey == this.itemKey || this.alwaysOpen ? true : false;
-            }),
-            'setActive': this.setActive
+            'active': computed(() => this.active),
+            'toggleActive': this.toggleActive
         }
     },
     methods: {
-        setActive() {
-            this.setActiveKey(this.itemKey);
+        toggleActive() {
+            this.toogleItemKey(this.itemKey);
         }
     }
-
 }
 </script>
 

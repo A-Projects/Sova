@@ -6,7 +6,8 @@
 </template>
 
 <script>
-import {computed, ref} from 'vue';
+import {computed} from 'vue';
+//import { v4 as uuidv4 } from 'uuid';
 
 export default {
     name: 'SAccordion',
@@ -29,19 +30,25 @@ export default {
     },
     data() {
         return {
-            activeKey: this.activeItemKey
+            activeItemKeys: []
         }
     },
     provide() {
         return {
-            'alwaysOpen': this.alwaysOpen,
-            'activeKey': computed(() => this.activeKey),
-            'setActiveKey': this.setActiveKey
+            'activeItemKeys': computed(() => this.activeItemKeys),
+            'toogleItemKey': this.toogleItemKey
         }
     },
+    mounted() {
+        if(this.activeItemKey)
+            this.activeItemKeys.push(this.activeItemKey);
+    },
     methods: {
-        setActiveKey(itemKey) {
-            this.activeKey = itemKey;
+        toogleItemKey(itemKey) {
+            if (this.activeItemKeys.includes(itemKey))
+                this.activeItemKeys = this.activeItemKeys.filter(x => x != itemKey);
+            else
+                this.alwaysOpen ? this.activeItemKeys.push(itemKey) : this.activeItemKeys = [ itemKey ]
         }
     }
 }

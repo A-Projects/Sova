@@ -1,5 +1,5 @@
 <template>
-    <s-accordion-collapse :visible="active">
+    <s-accordion-collapse>
         <div class="accordion-body">
             <slot/>
         </div>
@@ -10,8 +10,7 @@
 import SAccordionCollapse from './SAccordionCollapse.vue';
 export default {
     name: 'SAccordionBody',
-    components: {SAccordionCollapse},
-    inject: ['active']
+    components: {SAccordionCollapse}
 }
 </script>
 
