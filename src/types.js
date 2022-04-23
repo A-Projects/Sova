@@ -23,17 +23,7 @@ const ButtonSize = {
         ].includes(x)
     }
 };
-/*
-const Variant = {
-    type: String,
-    default: undefined,
-    required: false,
-    validator: (x) => {
-        return ['outline']
-            .includes(x)
-    }
-}
-*/
+
 const Shape = {
     type: String,
     validator: (x) => {
@@ -55,7 +45,7 @@ const Shape = {
 
 const Color = {
     type: String,
-    default: 'body',
+    default: 'primary',
     validator: (x) => {
         return [
             'primary',
@@ -92,7 +82,7 @@ const Gradient = {
 
 const TextColor = {
     type: String,
-    default: 'body',
+    default: undefined,
     validator: (x) => {
         return [
             'primary',

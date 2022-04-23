@@ -23,6 +23,7 @@ module.exports = {
           '/components/s-link.md',
           '/components/s-button.md',
           '/components/s-button-group.md',
+          '/components/s-spinner.md',
         ]
       },
       {
@@ -53,6 +54,7 @@ module.exports = {
           SLink: path.resolve(__dirname, '../../src/components/SLink.vue'),
           SButton: path.resolve(__dirname, '../../src/components/SButton.vue'),
           SButtonGroup: path.resolve(__dirname, '../../src/components/SButtonGroup.vue'),
+          SSpinner: path.resolve(__dirname, '../../src/components/SSpinner.vue'),
         },
       },
     ],

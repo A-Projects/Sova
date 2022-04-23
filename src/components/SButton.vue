@@ -1,6 +1,6 @@
 <template>
-  <component type="button" v-bind:is="link ? 'a' : 'button'" class="btn" :class="[
-    [ outline ? 'btn-outline-' + color : 'btn-' + color],
+  <component v-bind:is="link ? 'a' : 'button'" type="button" class="btn" :class="[
+    [ outline ? 'btn-outline-' + color : 'btn-' + color ],
     { ['btn-' + size]: size },
     { ['text-' + nowrap]: nowrap },
     { 'active': active },
