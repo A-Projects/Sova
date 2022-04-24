@@ -24,6 +24,7 @@ module.exports = {
           '/components/s-button.md',
           '/components/s-button-group.md',
           '/components/s-spinner.md',
+          '/components/s-progress.md'
         ]
       },
       {
@@ -55,6 +56,8 @@ module.exports = {
           SButton: path.resolve(__dirname, '../../src/components/SButton.vue'),
           SButtonGroup: path.resolve(__dirname, '../../src/components/SButtonGroup.vue'),
           SSpinner: path.resolve(__dirname, '../../src/components/SSpinner.vue'),
+          SProgressBar: path.resolve(__dirname, '../../src/components/SProgressBar.vue'),
+          SProgress: path.resolve(__dirname, '../../src/components/SProgress.vue'),
         },
       },
     ],
