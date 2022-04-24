@@ -17,17 +17,15 @@
 <s-button class="me-1" color="link">Link</s-button>
 
 ``` vue
-<template>
-  <s-button color="primary" disabled>Primary</s-button>
-  <s-button color="secondary">Secondary</s-button>
-  <s-button color="success" active>Success</s-button>
-  <s-button color="danger">Danger</s-button>
-  <s-button color="warning">Warning</s-button>
-  <s-button color="info">Info</s-button>
-  <s-button color="light">Light</s-button>
-  <s-button color="dark">Dark</s-button>
-  <s-button color="link">Link</s-button>
-</template>
+<s-button class="me-1" color="primary" disabled>Primary</s-button>
+<s-button class="me-1" color="secondary">Secondary</s-button>
+<s-button class="me-1" color="success" active>Success</s-button>
+<s-button class="me-1" color="danger">Danger</s-button>
+<s-button class="me-1" color="warning">Warning</s-button>
+<s-button class="me-1" color="info">Info</s-button>
+<s-button class="me-1" color="light">Light</s-button>
+<s-button class="me-1" color="dark">Dark</s-button>
+<s-button class="me-1" color="link">Link</s-button>
 ```
 
 ### Свойство ссылки
@@ -42,13 +40,11 @@
 </s-button>
 
 ``` vue
-<template>
-  <s-button color="primary" href="#" link disabled>
+<s-button class="me-1" color="primary" href="#" link disabled>
     Disabled
-  </s-button>
+</s-button>
 
-  <s-button color="danger" href="http://google.ru" link>
+<s-button class="me-1" color="danger" href="http://google.ru" link>
     Google
-  </s-button>
-</template>
+</s-button>
 ```
