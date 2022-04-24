@@ -13,17 +13,6 @@ const Size = {
     }
 };
 
-const ButtonSize = {
-    type: String,
-    default: undefined,
-    validator: (x) => {
-        return [
-            'sm',
-            'lg',
-        ].includes(x)
-    }
-};
-
 const Shape = {
     type: String,
     validator: (x) => {
@@ -102,4 +91,4 @@ const TextColor = {
     },
 }
 
-export { Size, ButtonSize, Shape, Color, Gradient, TextColor }
+export { Size, Shape, Color, Gradient, TextColor }

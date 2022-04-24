@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import {ButtonSize, Color} from '../types.js'
+import {Color} from '../types.js'
 
 export default {
   name: 'SButton',
@@ -41,7 +41,16 @@ export default {
       default: false,
       required: false,
     },
-    size: ButtonSize,
+    size: {
+        type: String,
+        default: undefined,
+        validator: (x) => {
+            return [
+                'sm',
+                'lg',
+            ].includes(x)
+        }
+    },
     color: Color
   }
 }
