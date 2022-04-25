@@ -48,6 +48,7 @@ const Color = {
             'body',
             'white',
             'transparent',
+            'link'
         ].includes(x)
     },
 };
