@@ -24,6 +24,7 @@ module.exports = {
           '/components/s-link.md',
           '/components/s-button.md',
           '/components/s-button-group.md',
+          '/components/s-close-button.md',
           '/components/s-progress.md',
           '/components/s-spinner.md'
         ]
@@ -57,6 +58,7 @@ module.exports = {
           SLink: path.resolve(__dirname, '../../src/components/SLink.vue'),
           SButton: path.resolve(__dirname, '../../src/components/SButton.vue'),
           SButtonGroup: path.resolve(__dirname, '../../src/components/SButtonGroup.vue'),
+          SCloseButton: path.resolve(__dirname, '../../src/components/SCloseButton.vue'),
           SSpinner: path.resolve(__dirname, '../../src/components/SSpinner.vue'),
           SProgressBar: path.resolve(__dirname, '../../src/components/SProgressBar.vue'),
           SProgress: path.resolve(__dirname, '../../src/components/SProgress.vue'),
