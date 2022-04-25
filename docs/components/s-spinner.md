@@ -5,7 +5,7 @@
 Для построения спинера походят различные тэги `div`, `span` (по умолчанию `div`).
 
 ### Как использовать
-Спиннер, вариант `border`, легкий индикатор загрузки. Можно применять различные стили спиннера и использовать различные тэги для построения.
+Можно применять различные стили спиннера и использовать различные тэги для построения.
 
 <s-spinner class="me-1" color="primary"/>
 <s-spinner class="me-1" color="secondary"/>
@@ -30,24 +30,24 @@
 ### Grow вариант
 Вариант `grow` спиннера, когда ищите альтернативу.
 
-<s-spinner class="me-1" color="primary" variant="grow"/>
-<s-spinner class="me-1" color="secondary" variant="grow"/>
-<s-spinner class="me-1" color="success" variant="grow"/>
-<s-spinner class="me-1" color="danger" variant="grow"/>
-<s-spinner class="me-1" color="warning" variant="grow"/>
-<s-spinner class="me-1" color="info" variant="grow"/>
-<s-spinner class="me-1" color="light" variant="grow"/>
-<s-spinner class="me-1" color="body" variant="grow"/>
+<s-spinner class="me-1" color="primary" grow/>
+<s-spinner class="me-1" color="secondary" grow/>
+<s-spinner class="me-1" color="success" grow/>
+<s-spinner class="me-1" color="danger" grow/>
+<s-spinner class="me-1" color="warning" grow/>
+<s-spinner class="me-1" color="info" grow/>
+<s-spinner class="me-1" color="light" grow/>
+<s-spinner class="me-1" color="body" grow/>
 
 ``` vue
-<s-spinner class="me-1" color="primary" variant="grow"/>
-<s-spinner class="me-1" color="secondary" variant="grow"/>
-<s-spinner class="me-1" color="success" variant="grow"/>
-<s-spinner class="me-1" color="danger" variant="grow"/>
-<s-spinner class="me-1" color="warning" variant="grow"/>
-<s-spinner class="me-1" color="info" variant="grow"/>
-<s-spinner class="me-1" color="light" variant="grow"/>
-<s-spinner class="me-1" color="body" variant="grow"/>
+<s-spinner class="me-1" color="primary" grow/>
+<s-spinner class="me-1" color="secondary" grow/>
+<s-spinner class="me-1" color="success" grow/>
+<s-spinner class="me-1" color="danger" grow/>
+<s-spinner class="me-1" color="warning" grow/>
+<s-spinner class="me-1" color="info" grow/>
+<s-spinner class="me-1" color="light" grow/>
+<s-spinner class="me-1" color="body" grow/>
 ```
 
 ### Выравнивание
@@ -128,11 +128,11 @@
 Можно сделать спиннер маленьким (предопределённый размер `sm`) или любым другим с помощью `style`.
 
 <s-spinner class="me-2" size="sm"/>
-<s-spinner class="me-2" style="width: 3rem; height: 3rem;"/>
+<s-spinner class="me-2" :width="3" :height="3"/>
 
 ``` vue
 <s-spinner class="me-2" size="sm"/>
-<s-spinner class="me-2" style="width: 3rem; height: 3rem;"/>
+<s-spinner class="me-2" width=3 height=3/>
 ```
 
 ### Кнопки

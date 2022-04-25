@@ -1,9 +1,9 @@
 <template>
-    <component v-bind:is="tag" :class="[
+    <component v-bind:is="tag" :style="[ {width: width + 'rem'}, {height: height + 'rem'} ]" :class="[
         [ 'spinner-' + variant ],
         { ['spinner-' + variant + '-' + size] : size },
         { ['text-' + color] : color }
-    ]" role="status" />
+    ]"/>
 </template>
 
 <script>
@@ -17,16 +17,10 @@ export default {
             default: 'div',
             required: false
         },
-        variant: {
-            type: String,
-            default: 'border',
+        grow: {
+            type: Boolean,
+            default: false,
             required: false,
-            validator: (x) => {
-                return [
-                    'border',
-                    'grow'
-                ].includes(x)
-            }
         },
         size: {
             type: String,
@@ -37,7 +31,22 @@ export default {
                 ].includes(x)
             }
         },
+        width: {
+            type: Number,
+            required: false,
+            default: undefined,
+        },
+        height: {
+            type: Number,
+            required: false,
+            default: undefined,
+        },
         color: TextColor
+    },
+    data() {
+        return {
+            variant: this.grow ? 'grow' : 'border',
+        }
     }
 }
 </script>

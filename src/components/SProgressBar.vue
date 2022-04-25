@@ -1,8 +1,9 @@
 <template>
-    <div class="progress-bar" :class="[
+    <div class="progress-bar" :style="{ width: value + '%' }" :class="[
+        [ 'bg-' + color ],
         { 'progress-bar-striped': striped },
         { 'progress-bar-animated': animated }
-    ]"  :style="{ width : value + '%' }" role="progressbar">
+    ]">
         <slot/>
     </div>
 </template>
@@ -16,19 +17,19 @@ export default {
         animated: {
             type: Boolean,
             default: false,
-            required: false,
+            required: false
         },
         striped: {
             type: Boolean,
             default: false,
-            require: false
+            required: false,
         },
-        color: Color,
         value: {
             type: Number,
-            default: 25,
-            required: false
-        }
+            required: false,
+            default: 0,
+        },
+        color: Color,
     }
 }
 </script>

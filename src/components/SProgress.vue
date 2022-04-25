@@ -1,8 +1,6 @@
 <template>
-    <div class="progress">
-        <s-progress-bar>
-            <slot/>
-        </s-progress-bar>
+    <div class="progress" :style="{ height: height + 'px' }">
+        <slot/>
     </div>
 </template>
 
@@ -16,9 +14,8 @@ export default {
             type: Number,
             default: undefined,
             required: false,
-        },
-        ...SProgressBar.props
-    },
+        }
+    }
 }
 </script>
 

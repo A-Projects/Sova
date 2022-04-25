@@ -6,42 +6,85 @@
 Т1
 
 <s-progress class="mb-3">
-    <s-progress-bar :value="0">
-        40%
+    <s-progress-bar color="primary" :value="0"/>
+</s-progress>
+
+<s-progress class="mb-3">
+    <s-progress-bar color="success" :value="25" striped/>
+</s-progress>
+
+<s-progress class="mb-3">
+    <s-progress-bar color="info" :value="50" striped animated/>
+</s-progress>
+
+<s-progress class="mb-3">
+    <s-progress-bar color="warning" :value="75">
+        75%
     </s-progress-bar>
 </s-progress>
 
-<s-progress class="mb-3" :value="25">
-    <s-progress-bar color="danger" striped animated>
-        50%
+<s-progress class="mb-3">
+    <s-progress-bar color="danger" :value="100">
+        100%
     </s-progress-bar>
 </s-progress>
 
+
+``` vue
 <s-progress class="mb-3">
-    <s-progress-bar  color="success" />
+    <s-progress-bar color="primary" :value="0"/>
 </s-progress>
 
 <s-progress class="mb-3">
-    <s-progress-bar />
+    <s-progress-bar color="success" :value="25" striped/>
 </s-progress>
 
 <s-progress class="mb-3">
-    <s-progress-bar/>
+    <s-progress-bar color="info" :value="50" striped animated/>
+</s-progress>
+
+<s-progress class="mb-3">
+    <s-progress-bar color="warning" :value="75">
+        75%
+    </s-progress-bar>
+</s-progress>
+
+<s-progress class="mb-3" height="30">
+    <s-progress-bar color="danger" :value="100">
+        100%
+    </s-progress-bar>
+</s-progress>
+```
+
+### Размер
+Т2
+
+<s-progress class="mb-3" :height="1">
+    <s-progress-bar color="primary" :value="50"/>
+</s-progress>
+
+<s-progress class="mb-3" :height="30">
+    <s-progress-bar color="primary" :value="50"/>
 </s-progress>
 
 ``` vue
-Т1
+<s-progress class="mb-3" height=1>
+    <s-progress-bar color="primary" :value="50"/>
+</s-progress>
+
+<s-progress class="mb-3" height=30>
+    <s-progress-bar color="primary" :value="50"/>
+</s-progress>
 ```
 
-### Т2
-Т2
-
-``` vue
-Т2
-```
-
-### Т3
+###  Несколько индикаторов
 Т3
+
+<s-progress class="mb-3">
+    <s-progress-bar color="primary" :value="15"/>
+    <s-progress-bar color="success" :value="30"/>
+    <s-progress-bar color="info" :value="20"/>
+</s-progress>
 
 ``` vue
 Т3
