@@ -8,8 +8,6 @@
 </template>
 
 <script>
-import {ButtonSize} from '../types.js'
-
 export default {
   name: 'SButtonGroup',
   props: {
@@ -18,7 +16,16 @@ export default {
       default: false,
       required: false,
     },
-    size: ButtonSize,
+    size: {
+        type: String,
+        default: undefined,
+        validator: (x) => {
+            return [
+                'sm',
+                'lg',
+            ].includes(x)
+        }
+    },
   }
 }
 </script>
