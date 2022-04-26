@@ -1,4 +1,4 @@
-# Кнопка
+# Кнопки
 
 Компонент `s-button` для использования в таблицах, формах, карточках и многом другом. 
 Можно применять различные стили, состояния и размеры. Готов к использованию и легко настраивается.
@@ -47,4 +47,68 @@
 <s-button class="me-1" color="danger" href="http://google.ru" link>
     Google
 </s-button>
+```
+### ТЗ
+ТЗ
+
+<s-button class="me-1" color="success" outline>Success</s-button>
+<s-button class="me-1" color="danger" outline>Danger</s-button>
+<s-button class="me-1" color="warning" outline>Warning</s-button>
+
+``` vue
+ТЗ
+```
+
+### ТЗ
+ТЗ
+
+<s-button class="me-1" color="primary" size="lg">Большая кнопка</s-button>
+<s-button class="me-1" color="secondary" size="lg">Большая кнопка</s-button>
+
+``` vue
+ТЗ
+```
+
+### ТЗ
+ТЗ
+
+<s-button class="me-1" color="primary" size="sm">Маленькая кнопка</s-button>
+<s-button class="me-1" color="secondary" size="sm">Маленькая кнопка</s-button>
+
+``` vue
+ТЗ
+```
+
+### ТЗ
+ТЗ
+
+<s-button class="me-1" color="primary" disabled>Отключенная кнопка</s-button>
+<s-button class="me-1" color="secondary" disabled>Отключенная кнопка</s-button>
+
+``` vue
+ТЗ
+```
+
+
+### ТЗ
+ТЗ
+
+<s-button class="me-1" color="success" shape="rounded-pill">Success</s-button>
+<s-button class="me-1" color="danger" shape="rounded-pill">Danger</s-button>
+<s-button class="me-1" color="warning" shape="rounded-pill">Warning</s-button>
+
+``` vue
+ТЗ
+```
+
+
+### ТЗ
+ТЗ
+
+<s-button class="me-1" color="success" shape="rounded-0">Success</s-button>
+<s-button class="me-1" color="danger" shape="rounded-0">Danger</s-button>
+<s-button class="me-1" color="warning" shape="rounded-0">Warning</s-button>
+
+``` vue
+ТЗ
 ```

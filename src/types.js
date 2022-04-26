@@ -34,7 +34,7 @@ const Shape = {
 
 const Color = {
     type: String,
-    default: 'primary',
+    default: undefined,
     validator: (x) => {
         return [
             'primary',

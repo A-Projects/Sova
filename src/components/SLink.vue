@@ -3,13 +3,13 @@
     [ 'link-' + color ],
     { ['text-' + nowrap]: nowrap },
     { 'disabled': disabled }
-  ]">
+  ]" :href="href">
     <slot/>
   </a>
 </template>
 
 <script>
-import {Size, Color} from '../types.js'
+import {Color} from '../types.js'
 
 export default {
   name: 'SLink',
@@ -24,7 +24,12 @@ export default {
       default: false,
       required: false,
     },
-    color: Color
+    href: {
+      type: String,
+      default: '#',
+      required: false,
+    },
+    color: Color,
   }
 }
 </script>

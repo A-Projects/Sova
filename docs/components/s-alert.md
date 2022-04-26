@@ -1,35 +1,35 @@
-# Оповещение
+# Оповещения
 
 Компонент `s-alert` позволяет отображать оповещения для пользователя. 
 
 ### Как использовать
 Т1
 
-<s-alert color="primary">Простой сигнал тревоги. Для проверки!</s-alert>
-<s-alert color="secondary">Простой сигнал тревоги. Для проверки!</s-alert>
-<s-alert color="success">Простой сигнал тревоги. Для проверки!</s-alert>
-<s-alert color="danger">Простой сигнал тревоги. Для проверки!</s-alert>
-<s-alert color="warning">Простой сигнал тревоги. Для проверки!</s-alert>
-<s-alert color="info">Простой сигнал тревоги. Для проверки!</s-alert>
-<s-alert color="light">Простой сигнал тревоги. Для проверки!</s-alert>
-<s-alert color="dark">Простой сигнал тревоги. Для проверки!</s-alert>
+<s-alert color="primary">Простое оповещение. Для проверки!</s-alert>
+<s-alert color="secondary">Простое оповещение. Для проверки!</s-alert>
+<s-alert color="success">Простое оповещение. Для проверки!</s-alert>
+<s-alert color="danger">Простое оповещение. Для проверки!</s-alert>
+<s-alert color="warning">Простое оповещение. Для проверки!</s-alert>
+<s-alert color="info">Простое оповещение. Для проверки!</s-alert>
+<s-alert color="light">Простое оповещение. Для проверки!</s-alert>
+<s-alert color="dark">Простое оповещение. Для проверки!</s-alert>
 
 ``` vue
-<s-alert color="primary">Простой сигнал тревоги. Для проверки!</s-alert>
-<s-alert color="secondary">Простой сигнал тревоги. Для проверки!</s-alert>
-<s-alert color="success">Простой сигнал тревоги. Для проверки!</s-alert>
-<s-alert color="danger">Простой сигнал тревоги. Для проверки!</s-alert>
-<s-alert color="warning">Простой сигнал тревоги. Для проверки!</s-alert>
-<s-alert color="info">Простой сигнал тревоги. Для проверки!</s-alert>
-<s-alert color="light">Простой сигнал тревоги. Для проверки!</s-alert>
-<s-alert color="dark">Простой сигнал тревоги. Для проверки!</s-alert>
+<s-alert color="primary">Простое оповещение. Для проверки!</s-alert>
+<s-alert color="secondary">Простое оповещение. Для проверки!</s-alert>
+<s-alert color="success">Простое оповещение. Для проверки!</s-alert>
+<s-alert color="danger">Простое оповещение. Для проверки!</s-alert>
+<s-alert color="warning">Простое оповещение. Для проверки!</s-alert>
+<s-alert color="info">Простое оповещение. Для проверки!</s-alert>
+<s-alert color="light">Простое оповещение. Для проверки!</s-alert>
+<s-alert color="dark">Простое оповещение. Для проверки!</s-alert>
 ```
 
-### Жизненный пример
+### Механика
 Т2
 
 <s-alert color="primary" :visible="show" dismissible @close="() => { show = false }">
-    Простой сигнал тревоги. Для проверки!
+    Простое оповещение. Для проверки!
 </s-alert>
 <s-button color="primary" @click="() => { show = true }">
     Показать оповещение
@@ -37,7 +37,7 @@
 
 ``` vue
 <s-alert color="primary" :visible="show" dismissible @close="() => { show = false }">
-    Простой сигнал тревоги. Для проверки!
+    Простое оповещение. Для проверки!
 </s-alert>
 <s-button color="primary" @click="() => { show = true }">
     Показать оповещение
@@ -47,14 +47,14 @@
 ### Ссылки
 Т3
 
-<s-alert color="primary">Простой сигнал тревоги с <s-alert-link href="#">примером ссылки</s-alert-link>. Для проверки!</s-alert>
-<s-alert color="secondary">Простой сигнал тревогис с <s-alert-link href="#">примером ссылки</s-alert-link>. Для проверки!</s-alert>
-<s-alert color="success">Простой сигнал тревоги с <s-alert-link href="#">примером ссылки</s-alert-link>. Для проверки!</s-alert>
-<s-alert color="danger">Простой сигнал тревоги с <s-alert-link href="#">примером ссылки</s-alert-link>. Для проверки!</s-alert>
-<s-alert color="warning">Простой сигнал тревоги с <s-alert-link href="#">примером ссылки</s-alert-link>. Для проверки!</s-alert>
-<s-alert color="info">Простой сигнал тревоги с <s-alert-link href="#">примером ссылки</s-alert-link>. Для проверки!</s-alert>
-<s-alert color="light">Простой сигнал тревоги с <s-alert-link href="#">примером ссылки</s-alert-link>. Для проверки!</s-alert>
-<s-alert color="dark">Простой сигнал тревоги с <s-alert-link href="#">примером ссылки</s-alert-link>. Для проверки!</s-alert>
+<s-alert color="primary">Простое оповещение с <s-alert-link href="#">примером ссылки</s-alert-link>. Для проверки!</s-alert>
+<s-alert color="secondary">Простое оповещениес с <s-alert-link href="#">примером ссылки</s-alert-link>. Для проверки!</s-alert>
+<s-alert color="success">Простое оповещение с <s-alert-link href="#">примером ссылки</s-alert-link>. Для проверки!</s-alert>
+<s-alert color="danger">Простое оповещение с <s-alert-link href="#">примером ссылки</s-alert-link>. Для проверки!</s-alert>
+<s-alert color="warning">Простое оповещение с <s-alert-link href="#">примером ссылки</s-alert-link>. Для проверки!</s-alert>
+<s-alert color="info">Простое оповещение с <s-alert-link href="#">примером ссылки</s-alert-link>. Для проверки!</s-alert>
+<s-alert color="light">Простое оповещение с <s-alert-link href="#">примером ссылки</s-alert-link>. Для проверки!</s-alert>
+<s-alert color="dark">Простое оповещение с <s-alert-link href="#">примером ссылки</s-alert-link>. Для проверки!</s-alert>
 
 ``` vue
 Т3
@@ -79,36 +79,28 @@
 Т3
 
 <s-alert color="primary" class="d-flex align-items-center">
-  <svg class="flex-shrink-0 me-2" width="24" height="24" viewBox="0 0 512 512">
-    <rect width="32" height="176" x="240" y="176" fill="var(--ci-primary-color, currentColor)" class="ci-primary"></rect><rect width="32" height="32" x="240" y="384" fill="var(--ci-primary-color, currentColor)" class="ci-primary"></rect><path fill="var(--ci-primary-color, currentColor)" d="M274.014,16H237.986L16,445.174V496H496V445.174ZM464,464H48V452.959L256,50.826,464,452.959Z" class="ci-primary"></path>
-  </svg>
+  <s-icon class="flex-shrink-0 me-2" icon="info-circle-fill" :size="24" /> 
   <div>
-    An example alert with an icon
+    Пример оповещения с иконкой
   </div>
 </s-alert>
 
-<s-alert color="primary" class="d-flex align-items-center">
-  <s-icon icon="cil-info" class="flex-shrink-0 me-2" width="24" height="24" />
-  <div>
-    An example alert with an icon
-  </div>
-</s-alert>
 <s-alert color="success" class="d-flex align-items-center">
-  <s-icon icon="cil-check-circle" class="flex-shrink-0 me-2" width="24" height="24" />
+  <s-icon class="flex-shrink-0 me-2" icon="check-circle-fill" :size="24" /> 
   <div>
-    An example success alert with an icon
+    Пример оповещения с иконкой
   </div>
 </s-alert>
 <s-alert color="warning" class="d-flex align-items-center">
-  <s-icon icon="cil-warning" class="flex-shrink-0 me-2" width="24" height="24" />
+  <s-icon class="flex-shrink-0 me-2" icon="exclamation-triangle-fill" :size="24" /> 
   <div>
-    An example warning alert with an icon
+    Пример оповещения с иконкой
   </div>
 </s-alert>
 <s-alert color="danger" class="d-flex align-items-center">
-  <s-icon icon="cil-burn" class="flex-shrink-0 me-2" width="24" height="24" />
+  <s-icon class="flex-shrink-0 me-2" icon="exclamation-triangle-fill" :size="24" />
   <div>
-    An example danger alert with an icon
+    Пример оповещения с иконкой
   </div>
 </s-alert>
 
