@@ -112,3 +112,51 @@
 ``` vue
 ТЗ
 ```
+
+### ТЗ
+ТЗ
+
+<div class="d-grid gap-2">
+    <s-button class="me-1" color="primary">Кнопка</s-button>
+    <s-button class="me-1" color="primary">Кнопка</s-button>
+</div>
+
+``` vue
+ТЗ
+```
+
+### ТЗ
+ТЗ
+
+<div class="d-grid gap-2 d-md-block">
+    <s-button class="me-1" color="primary">Кнопка</s-button>
+    <s-button class="me-1" color="primary">Кнопка</s-button>
+</div>
+
+``` vue
+ТЗ
+```
+
+### ТЗ
+ТЗ
+
+<div class="d-grid gap-2 col-6 mx-auto">
+    <s-button class="me-1" color="primary">Кнопка</s-button>
+    <s-button class="me-1" color="primary">Кнопка</s-button>
+</div>
+
+``` vue
+ТЗ
+```
+
+### ТЗ
+ТЗ
+
+<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+    <s-button class="me-1" color="primary">Кнопка</s-button>
+    <s-button class="me-1" color="primary">Кнопка</s-button>
+</div>
+
+``` vue
+ТЗ
+```
