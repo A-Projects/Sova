@@ -1,7 +1,7 @@
 <template>
   <component component v-bind:is="tag" :class="[
     [ 'link-' + color ],
-    { ['text-' + nowrap]: nowrap },
+    { 'text-nowrap': nowrap },
     { 'active': active },
     { 'disabled': disabled }
   ]" :href="href">

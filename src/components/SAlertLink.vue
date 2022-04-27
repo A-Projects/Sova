@@ -1,6 +1,6 @@
 <template>
     <a class="alert-link" :class="[
-        { ['text-' + nowrap]: nowrap },
+        { 'text-nowrap': nowrap },
     ]">
         <slot/>
     </a>

@@ -1,14 +1,14 @@
 <template>
-  <component v-bind:is="link ? 'a' : 'button'" type="button" class="btn" :href="href" :class="[
-    [ outline ? 'btn-outline-' + color : 'btn-' + color ],
-    { ['btn-' + size]: size },
-    { ['text-' + nowrap]: nowrap },
-    { 'active': active },
-    { 'disabled': disabled },
-    [ shape ]
-  ]">
-    <slot/>
-  </component>
+    <component v-bind:is="link ? 'a' : 'button'" type="button" :type="[ 'button' ? link : undefined]" :href="href" class="btn" :class="[
+        [ outline ? 'btn-outline-' + color : 'btn-' + color ],
+        { ['btn-' + size]: size },
+        { 'text-nowrap': nowrap },
+        { 'active': active },
+        { 'disabled': disabled },
+        [ shape ]
+      ]">
+        <slot/>
+    </component>
 </template>
 
 <script>
@@ -17,16 +17,6 @@ import {Color, Shape} from '../types.js'
 export default {
     name: 'SButton',
     props: {
-        active: {
-          type: Boolean,
-          default: false,
-          required: false,
-        },
-        disabled: {
-          type: Boolean,
-          default: false,
-          required: false,
-        },
         outline: {
           type: Boolean,
           default: false,
@@ -58,7 +48,17 @@ export default {
             }
         },
         color: Color,
-        shape: Shape
+        shape: Shape,
+        active: {
+            type: Boolean,
+            default: false,
+            required: false,
+        },
+        disabled: {
+            type: Boolean,
+            default: false,
+            required: false,
+        }
     }
 }
 </script>
