@@ -1,10 +1,10 @@
 <template>
-
+    <hr class="dropdown-divider"/>
 </template>
 
 <script>
 export default {
-    name: "SDropdownDivider"
+    name: 'SDropdownDivider'
 }
 </script>
 
