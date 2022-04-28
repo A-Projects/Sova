@@ -1,11 +1,15 @@
 <template>
     <li>
-        <component v-bind:is="link ? 'a' : 'button'" :type="[ 'button' ? link : undefined]" :href="href" class="dropdown-item" :class="[
-            { 'btn': !link},
-            { 'text-nowrap': nowrap },
-            { 'active': active },
-            { 'disabled': disabled }
-          ]">
+        <component
+            :is="href || to ? (to ? 'router-link' : 'a') : tag"
+            :type="tag == 'button' || tag == 'input' ? type : undefined"
+            class="dropdown-item"
+            :class="[
+                { 'active': active },
+                { 'disabled': disabled } ]"
+            :href="href"
+            :to="to"
+        >
             <slot/>
         </component>
     </li>
@@ -15,19 +19,24 @@
 export default {
     name: 'SDropdownItem',
     props: {
+        tag: {
+            type: String,
+            default: 'button',
+            required: false,
+        },
+        type: {
+            type: String,
+            default: 'button',
+            require: false,
+        },
         href: {
             type: String,
             default: undefined,
             required: false,
         },
-        link: {
-            type: Boolean,
-            default: false,
-            required: false,
-        },
-        nowrap: {
-            type: Boolean,
-            default: false,
+        to: {
+            type: String || Object,
+            default: undefined,
             required: false,
         },
         active: {

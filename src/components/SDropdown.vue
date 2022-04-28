@@ -1,6 +1,6 @@
 <template>
     <div :class="[
-        { 'btn-group': dropdown },
+        { 'btn-group': !dropdown },
         { 'dropdown': dropdown },
         { direction }
     ]">
@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import {computed, reactive, ref} from 'vue';
+import {computed} from 'vue';
 
 export default {
     name: 'SDropdown',
@@ -46,7 +46,7 @@ export default {
         return {
             'toggleMenu': this.toggleMenu,
             'visible': computed(() => this.show),
-            'setDropdownChild': this.setDropdownChild
+            'setDropdownToggle': this.setDropdownToggle
         }
     },
     emits: [
@@ -56,7 +56,7 @@ export default {
     data() {
         return {
             show: this.visible,
-            dropdownRef: ref()
+            dropdownRef: undefined
         }
     },
     watch: {
@@ -65,8 +65,8 @@ export default {
         }
     },
     methods: {
-        setDropdownChild(r) {
-            this.dropdownRef = r
+        setDropdownToggle(dropdownToggleRef) {
+            this.dropdownToggleRef = dropdownToggleRef
         },
         toggleMenu() {
             if(this.show)
@@ -85,8 +85,7 @@ export default {
             console.log("hide")
         },
         onEvent(event) {
-            console.log(this.dropdownRef);
-            if(this.dropdownRef && !this.dropdownRef.contains(event.target))
+            if(this.dropdownToggleRef && !this.dropdownToggleRef.contains(event.target))
                 this.onHide();
         }
     },

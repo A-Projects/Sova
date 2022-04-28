@@ -1,7 +1,7 @@
 <template>
     <component
         :is="tag"
-        class="dropdown-header"
+        class="dropdown-item-text"
     >
         <slot/>
     </component>
@@ -9,11 +9,11 @@
 
 <script>
 export default {
-    name: 'SDropdownHeader',
+    name: 'SDropdownText',
     props: {
         tag: {
             type: String,
-            default: 'h6',
+            default: 'span',
             required: false
         },
     }

@@ -1,12 +1,12 @@
 <template>
     <a
-        :href="href"
-        :to="to"
         :class="[
             [ 'link-' + color ],
             { 'text-nowrap': nowrap },
             { 'active': active },
             { 'disabled': disabled } ]"
+        :href="href"
+        :to="to"
     >
         <slot/>
     </a>
