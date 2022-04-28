@@ -1,9 +1,8 @@
 <template>
-    <component :is="link || href || to ? (to ? 'router-link' : 'a') : 'button'"
+    <component :is="href || to ? (to ? 'router-link' : 'a') : tag"
         class="btn"
         :href="href"
         :to="to"
-        :type="link || href || to ? undefined : type"
         :class="[
             [ shape ],
             [ color ? (outline ? 'btn-outline-' + color : 'btn-' + color) : undefined ],
@@ -22,20 +21,10 @@ import {Color, Shape} from '../types.js'
 export default {
     name: 'SButton',
     props: {
-        outline: {
-          type: Boolean,
-          default: false,
-          required: false,
-        },
-        nowrap: {
-          type: Boolean,
-          default: false,
-          required: false,
-        },
-        link: {
-          type: Boolean,
-          default: false,
-          required: false,
+        tag: {
+            type: String,
+            default: 'button',
+            required: false,
         },
         href: {
             type: String,
@@ -47,16 +36,15 @@ export default {
             default: undefined,
             required: false,
         },
-        type: {
-            type: String,
-            default: 'button',
-            validator: (x) => {
-                return [
-                    'button',
-                    'submit',
-                    'reset',
-                ].includes(x)
-            }
+        outline: {
+          type: Boolean,
+          default: false,
+          required: false,
+        },
+        nowrap: {
+          type: Boolean,
+          default: false,
+          required: false,
         },
         size: {
             type: String,

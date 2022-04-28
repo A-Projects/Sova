@@ -3,7 +3,7 @@
 Компонент `s-button` для использования в таблицах, формах, карточках и многом другом. 
 Можно применять различные стили, состояния и размеры. Готов к использованию и легко настраивается.
 
-### Как использовать
+### Использование
 Несколько предопределенных стилей кнопок, каждый из которых служит своей смысловой цели.
 
 <s-button class="me-1" color="primary" disabled>Primary</s-button>
@@ -28,11 +28,15 @@
 <s-button class="me-1" color="link">Link</s-button>
 ```
 
-### Свойство ссылки
-Может работать как ссылка при добавлении свойства `link` или `href` или `to`
+### Ссылка
+Может работать как ссылка при добавлении свойства `href`, `to` или при явном указании тэга.
 
-<s-button class="me-1" color="primary" link>
-    Пусто
+<s-button class="me-1" color="primary" tag="a">
+    Включена
+</s-button>
+
+<s-button class="me-1" color="primary" tag="a" disabled>
+    Отключена
 </s-button>
 
 <s-button class="me-1" color="primary" href="http://google.ru">
@@ -43,9 +47,7 @@
     Маршрут
 </s-button>
 
-<s-button class="me-1" color="primary" link disabled>
-    Отключена
-</s-button>
+
 
 
 ``` vue
@@ -58,12 +60,19 @@
 </s-button>
 ```
 
-### Типы
-Иногда требуется представить кнопку типам подходящими для форм
+### Тэги
+Иногда требуется представить кнопку различными тэгами и типам
+
+<s-button class="me-1" color="info" tag="span">Текст</s-button>
+<s-button class="me-1" color="info" tag="div">Блок</s-button>
 
 <s-button class="me-1" color="primary" type="button">Кнопка</s-button>
 <s-button class="me-1" color="primary" type="submit">Запрос</s-button>
 <s-button class="me-1" color="primary" type="reset">Сброс</s-button>
+
+<s-button class="me-1" color="secondary" tag="input" type="button" value="Запрос"/>
+<s-button class="me-1" color="secondary" tag="input" type="submit" value="Запрос"/>
+<s-button class="me-1" color="secondary" tag="input" type="reset" value="Сброс"/>
 
 ``` vue
 ТЗ
