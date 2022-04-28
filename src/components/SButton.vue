@@ -1,12 +1,17 @@
 <template>
-    <component v-bind:is="link ? 'a' : 'button'" type="button" :type="[ 'button' ? link : undefined]" :href="href" class="btn" :class="[
-        [ outline ? 'btn-outline-' + color : 'btn-' + color ],
-        { ['btn-' + size]: size },
-        { 'text-nowrap': nowrap },
-        { 'active': active },
-        { 'disabled': disabled },
-        [ shape ]
-      ]">
+    <component :is="link || href || to ? (to ? 'router-link' : 'a') : 'button'"
+        class="btn"
+        :href="href"
+        :to="to"
+        :type="link || href || to ? undefined : type"
+        :class="[
+            [ shape ],
+            [ color ? (outline ? 'btn-outline-' + color : 'btn-' + color) : undefined ],
+            { ['btn-' + size]: size },
+            { 'text-nowrap': nowrap },
+            { 'active': active },
+            { 'disabled': disabled } ]"
+      >
         <slot/>
     </component>
 </template>
@@ -37,6 +42,22 @@ export default {
             default: undefined,
             required: false,
         },
+        to: {
+            type: String || Object,
+            default: undefined,
+            required: false,
+        },
+        type: {
+            type: String,
+            default: 'button',
+            validator: (x) => {
+                return [
+                    'button',
+                    'submit',
+                    'reset',
+                ].includes(x)
+            }
+        },
         size: {
             type: String,
             default: undefined,
@@ -47,8 +68,8 @@ export default {
                 ].includes(x)
             }
         },
-        color: Color,
         shape: Shape,
+        color: Color,
         active: {
             type: Boolean,
             default: false,

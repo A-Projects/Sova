@@ -29,15 +29,24 @@
 ```
 
 ### Свойство ссылки
-Может работать как ссылка при добавлении свойства `link`
+Может работать как ссылка при добавлении свойства `link` или `href` или `to`
 
-<s-button class="me-1" color="primary" href="#" link disabled>
-    Disabled
+<s-button class="me-1" color="primary" link>
+    Пусто
 </s-button>
 
-<s-button class="me-1" color="danger" href="http://google.ru" link>
+<s-button class="me-1" color="primary" href="http://google.ru">
     Google
 </s-button>
+
+<s-button class="me-1" color="primary" to="{ path: '/home' }">
+    Маршрут
+</s-button>
+
+<s-button class="me-1" color="primary" link disabled>
+    Отключена
+</s-button>
+
 
 ``` vue
 <s-button class="me-1" color="primary" href="#" link disabled>
@@ -48,6 +57,18 @@
     Google
 </s-button>
 ```
+
+### Типы
+Иногда требуется представить кнопку типам подходящими для форм
+
+<s-button class="me-1" color="primary" type="button">Кнопка</s-button>
+<s-button class="me-1" color="primary" type="submit">Запрос</s-button>
+<s-button class="me-1" color="primary" type="reset">Сброс</s-button>
+
+``` vue
+ТЗ
+```
+
 ### ТЗ
 ТЗ
 

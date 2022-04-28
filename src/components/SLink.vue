@@ -1,12 +1,15 @@
 <template>
-  <component component v-bind:is="tag" :class="[
-    [ 'link-' + color ],
-    { 'text-nowrap': nowrap },
-    { 'active': active },
-    { 'disabled': disabled }
-  ]" :href="href">
-    <slot/>
-  </component>
+    <a
+        :href="href"
+        :to="to"
+        :class="[
+            [ 'link-' + color ],
+            { 'text-nowrap': nowrap },
+            { 'active': active },
+            { 'disabled': disabled } ]"
+    >
+        <slot/>
+    </a>
 </template>
 
 <script>
@@ -15,13 +18,13 @@ import {Color} from '../types.js'
 export default {
     name: 'SLink',
     props: {
-        tag: {
-            type: String,
-            default: 'a',
-            required: false,
-        },
         href: {
             type: String,
+            default: undefined,
+            required: false,
+        },
+        to: {
+            type: String || Object,
             default: undefined,
             required: false,
         },
