@@ -8,12 +8,12 @@ module.exports = {
   // site config
   lang: 'ru-RU',
   title: 'Сови',
-  description: 'Компоненты Vue.js на основе стилей Bootstrap',
+  description: 'Компоненты Vue.js на основе Bootstrap',
 
   // https://v2.vuepress.vuejs.org/reference/default-theme/config.html
   theme: '@vuepress/theme-default',
   themeConfig: {
-    logo: '/owl.png',
+    logo: '/sovi.png',
     sidebar: [
       {
         text: 'Компоненты',
@@ -23,6 +23,7 @@ module.exports = {
           '/components/s-alert.md',
           '/components/s-badge.md',
           '/components/s-breadcrumb.md',
+          '/components/s-card.md',
           '/components/s-dropdown.md',
           '/components/s-link.md',
           '/components/s-button.md',
@@ -63,13 +64,24 @@ module.exports = {
           SBadge: path.resolve(__dirname, '../../src/components/SBadge.vue'),
           SBreadcrumb: path.resolve(__dirname, '../../src/components/SBreadcrumb.vue'),
           SBreadcrumbItem: path.resolve(__dirname, '../../src/components/SBreadcrumbItem.vue'),
+          SCard: path.resolve(__dirname, '../../src/components/SCard.vue'),
+          SCardBody: path.resolve(__dirname, '../../src/components/SCardBody.vue'),
+          SCardFooter: path.resolve(__dirname, '../../src/components/SCardFooter.vue'),
+          SCardGroup: path.resolve(__dirname, '../../src/components/SCardGroup.vue'),
+          SCardHeader: path.resolve(__dirname, '../../src/components/SCardHeader.vue'),
+          SCardImage: path.resolve(__dirname, '../../src/components/SCardImage.vue'),
+          SCardImageOverlay: path.resolve(__dirname, '../../src/components/SCardImageOverlay.vue'),
+          SCardLink: path.resolve(__dirname, '../../src/components/SCardLink.vue'),
+          SCardSubtitle: path.resolve(__dirname, '../../src/components/SCardSubtitle.vue'),
+          SCardText: path.resolve(__dirname, '../../src/components/SCardText.vue'),
+          SCardTitle: path.resolve(__dirname, '../../src/components/SCardTitle.vue'),
           SDropdown: path.resolve(__dirname, '../../src/components/SDropdown.vue'),
           SDropdownDivider: path.resolve(__dirname, '../../src/components/SDropdownDivider.vue'),
           SDropdownHeader: path.resolve(__dirname, '../../src/components/SDropdownHeader.vue'),
           SDropdownItem: path.resolve(__dirname, '../../src/components/SDropdownItem.vue'),
           SDropdownMenu: path.resolve(__dirname, '../../src/components/SDropdownMenu.vue'),
           SDropdownText: path.resolve(__dirname, '../../src/components/SDropdownText.vue'),
-          SDropdownToggle: path.resolve(__dirname, '../../src/components/SDropdownToggle.vue'),
+          SDropdownToggle: path.resolve(__dirname, '../../src/components/SDropdownButton.vue'),
           SIcon: path.resolve(__dirname, '../../src/components/SIcon.vue'),
           SLink: path.resolve(__dirname, '../../src/components/SLink.vue'),
           SButton: path.resolve(__dirname, '../../src/components/SButton.vue'),
