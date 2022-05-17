@@ -53,6 +53,30 @@ const Color = {
     },
 };
 
+const Placement = {
+    type: String,
+    default: 'bottom-start',
+    validator: (x) => {
+        return [
+            'auto',
+            'auto-start',
+            'auto-end',
+            'top-end',
+            'top',
+            'top-start',
+            'bottom-end',
+            'bottom',
+            'bottom-start',
+            'right-start',
+            'right',
+            'right-end',
+            'left-start',
+            'left',
+            'left-end'
+        ].includes(x)
+    },
+};
+
 const Gradient = {
     type: String,
     default: 'body',
@@ -92,4 +116,4 @@ const TextColor = {
     },
 }
 
-export { Size, Shape, Color, Gradient, TextColor }
+export { Size, Shape, Color, Placement, Gradient, TextColor }

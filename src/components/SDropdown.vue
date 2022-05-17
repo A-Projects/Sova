@@ -2,7 +2,7 @@
     <div :class="[
         { 'btn-group': !dropdown },
         { 'dropdown': dropdown },
-        { direction }
+        [ direction ]
     ]">
         <slot/>
     </div>
@@ -10,6 +10,8 @@
 
 <script>
 import {computed} from 'vue';
+import {Placement} from '../types.js'
+import {createPopper} from '@popperjs/core'
 
 export default {
     name: 'SDropdown',
@@ -31,11 +33,7 @@ export default {
                 ].includes(x)
             },
         },
-        placement: {
-            type: String,
-            default: 'bottom-start',
-            required: false,
-        },
+        placement: Placement,
         visible: {
             type: Boolean,
             default: false,
@@ -45,8 +43,9 @@ export default {
     provide() {
         return {
             'toggleMenu': this.toggleMenu,
-            'visible': computed(() => this.show),
-            'setDropdownToggle': this.setDropdownToggle
+            'visible': computed(() => this.dropdownMenuShow),
+            'setDropdownButton': this.setDropdownButton,
+            'setDropdownMenu': this.setDropdownMenu
         }
     },
     emits: [
@@ -55,47 +54,78 @@ export default {
     ],
     data() {
         return {
-            show: this.visible,
-            dropdownRef: undefined
+            dropdownMenuShow: this.visible,
+            dropdownMenuPlacement: this.placement,
+            dropdownButtonRef: undefined,
+            dropdownMenuRef: undefined,
+            popper: undefined
         }
     },
     watch: {
         visible: function (value) {
-            this.show = value
+            this.dropdownMenuShow = value;
         }
     },
     methods: {
-        setDropdownToggle(dropdownToggleRef) {
-            this.dropdownToggleRef = dropdownToggleRef
+        setDropdownButton(dropdownButtonRef) {
+            this.dropdownButtonRef = dropdownButtonRef;
+        },
+        setDropdownMenu(dropdownMenuRef) {
+            this.dropdownMenuRef = dropdownMenuRef;
+        },
+        constructPopper() {
+            console.debug(this.dropdownMenuPlacement);
+            if(!this.popper && this.dropdownButtonRef && this.dropdownMenuRef) {
+                this.popper = createPopper(this.dropdownButtonRef, this.dropdownMenuRef, {
+                    placement: this.dropdownMenuPlacement,
+                });
+            }
+        },
+        destructPopper() {
+            if (this.popper) {
+                this.popper.destroy();
+                this.popper = undefined;
+            }
         },
         toggleMenu() {
-            if(this.show)
-                this.onHide()
+            if(this.dropdownMenuShow)
+                this.onHide();
             else
-                this.onShow()
+                this.onShow();
         },
         onShow() {
-            this.show = true
-            this.$emit('show')
-            console.log("show")
+            this.dropdownMenuShow = true;
+            this.$emit('show');
+            this.constructPopper();
         },
         onHide() {
-            this.show = false
-            this.$emit('hide')
-            console.log("hide")
+            this.dropdownMenuShow = false;
+            this.$emit('hide');
+            this.destructPopper();
         },
         onEvent(event) {
-            if(this.dropdownToggleRef && !this.dropdownToggleRef.contains(event.target))
+            if(this.dropdownButtonRef && !this.dropdownButtonRef.contains(event.target))
                 this.onHide();
         }
     },
     mounted() {
         window.addEventListener('click', this.onEvent);
         window.addEventListener('keyup', this.onEvent);
+
+        if (this.direction === 'dropup') {
+            this.dropdownMenuPlacement = 'top-start';
+        }
+        if (this.direction === 'dropend') {
+            this.dropdownMenuPlacement = 'right-start';
+        }
+        if (this.direction === 'dropstart') {
+            this.dropdownMenuPlacement = 'left-start';
+        }
     },
     unmounted() {
-        window.removeEventListener('click', this.onEvent)
-        window.removeEventListener('keyup', this.onEvent)
+        window.removeEventListener('click', this.onEvent);
+        window.removeEventListener('keyup', this.onEvent);
+        this.destructPopper();
     }
 }
 </script>

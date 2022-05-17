@@ -1,5 +1,6 @@
 <template>
     <ul
+        ref="dropdownMenuRef"
         class="dropdown-menu"
         :class="[
             {'dropdown-menu-dark': dark},
@@ -12,7 +13,7 @@
 <script>
 export default {
     name: 'SDropdownMenu',
-    inject: ['visible'],
+    inject: ['visible', 'setDropdownMenu'],
     props: {
         tag: {
             type: String,
@@ -24,6 +25,9 @@ export default {
             required: false,
         },
     },
+    mounted() {
+        this.setDropdownMenu(this.$refs.dropdownMenuRef);
+    }
 }
 </script>
 

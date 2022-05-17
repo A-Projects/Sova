@@ -1,6 +1,6 @@
 <template>
     <component
-        ref="dropdownToggleRef"
+        ref="dropdownButtonRef"
         :is="tag"
         :type="tag == 'button' || tag == 'input' ? type : undefined"
         class="btn dropdown-toggle"
@@ -13,7 +13,6 @@
             { 'show': visible },
             { 'active': active },
             { 'disabled': disabled } ]"
-        :href="tag == 'a' ? '#' : undefined"
         @click="toggleMenu"
     >
         <slot/>
@@ -25,7 +24,7 @@ import {Color, Shape} from "../types.js";
 
 export default {
     name: 'SDropdownToggle',
-    inject: ['visible', 'toggleMenu', 'setDropdownToggle'],
+    inject: ['visible', 'toggleMenu', 'setDropdownButton'],
     props: {
         tag: {
             type: String,
@@ -74,7 +73,7 @@ export default {
         },
     },
     mounted() {
-        this.setDropdownToggle(this.$refs.dropdownToggleRef);
+        this.setDropdownButton(this.$refs.dropdownButtonRef);
     }
 }
 </script>

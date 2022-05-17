@@ -1,5 +1,6 @@
 <template>
     <a
+        :is="to ? 'router-link' : 'a'"
         :class="[
             [ 'link-' + color ],
             { 'text-nowrap': nowrap },
