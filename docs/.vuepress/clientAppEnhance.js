@@ -1,8 +1,0 @@
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap-icons/font/bootstrap-icons.css';
-
-import { defineClientAppEnhance } from '@vuepress/client'
-
-export default defineClientAppEnhance(({ app, router, siteData }) => {
-    app.config.unwrapInjectedRef = true
-})
