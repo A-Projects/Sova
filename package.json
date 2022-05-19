@@ -1,14 +1,14 @@
 {
   "name": "@a-projects/sovi",
   "description": "Boostrap components on Vue.js",
-  "version": "0.0.1",
+  "version": "5.1.3-alpha.1",
   "private": false,
   "author": {
     "name": "Andrey Baryshkin",
     "email": "baryshkin_aa@codeblast.ru"
   },
-  "repository": "https://github.com/A-Projects/SilkBootstrap",
-  "bugs": "https://github.com/A-Projects/SilkBootstrap/issues",
+  "repository": "https://github.com/A-Projects/Sovi",
+  "bugs": "https://github.com/A-Projects/Sovi/issues",
   "license": "MIT",
   "keywords": [
     "vue.js",
