@@ -56,6 +56,7 @@ export default {
         size: {
             type: String,
             default: undefined,
+            required: false,
             validator: (x) => {
                 return [
                     'sm',

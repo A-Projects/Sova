@@ -21,6 +21,7 @@ module.exports = {
           '/components/s-badge.md',
           '/components/s-breadcrumb.md',
           '/components/s-card.md',
+          '/components/s-list-group.md',
           '/components/s-dropdown.md',
           '/components/s-link.md',
           '/components/s-button.md',
@@ -56,7 +57,7 @@ module.exports = {
         SAccordionButton: path.resolve(__dirname, '../../src/components/SAccordionButton.vue'),
         SAccordionCollapse: path.resolve(__dirname, '../../src/components/SAccordionCollapse.vue'),
         SAccordionHeader: path.resolve(__dirname, '../../src/components/SAccordionHeader.vue'),
-        SAccordionItem: path.resolve(__dirname, '../../src/components/SAccordionItem.vue'),/*
+        SAccordionItem: path.resolve(__dirname, '../../src/components/SAccordionItem.vue'),
         SAlert: path.resolve(__dirname, '../../src/components/SAlert.vue'),
         SAlertHeading: path.resolve(__dirname, '../../src/components/SAlertHeading.vue'),
         SAlertLink: path.resolve(__dirname, '../../src/components/SAlertLink.vue'),
@@ -74,6 +75,8 @@ module.exports = {
         SCardSubtitle: path.resolve(__dirname, '../../src/components/SCardSubtitle.vue'),
         SCardText: path.resolve(__dirname, '../../src/components/SCardText.vue'),
         SCardTitle: path.resolve(__dirname, '../../src/components/SCardTitle.vue'),
+        SListGroup: path.resolve(__dirname, '../../src/components/SListGroup.vue'),
+        SListGroupItem: path.resolve(__dirname, '../../src/components/SListGroupItem.vue'),
         SDropdown: path.resolve(__dirname, '../../src/components/SDropdown.vue'),
         SDropdownDivider: path.resolve(__dirname, '../../src/components/SDropdownDivider.vue'),
         SDropdownHeader: path.resolve(__dirname, '../../src/components/SDropdownHeader.vue'),
@@ -89,7 +92,6 @@ module.exports = {
         SSpinner: path.resolve(__dirname, '../../src/components/SSpinner.vue'),
         SProgressBar: path.resolve(__dirname, '../../src/components/SProgressBar.vue'),
         SProgress: path.resolve(__dirname, '../../src/components/SProgress.vue'),
-        */
       },
     }),
   ],
