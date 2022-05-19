@@ -20,13 +20,15 @@ module.exports = {
           '/components/s-alert.md',
           '/components/s-badge.md',
           '/components/s-breadcrumb.md',
-          '/components/s-card.md',
-          '/components/s-list-group.md',
-          '/components/s-dropdown.md',
-          '/components/s-link.md',
           '/components/s-button.md',
           '/components/s-button-group.md',
+          '/components/s-card.md',
           '/components/s-close-button.md',
+          '/components/s-collapse.md',
+          '/components/s-dropdown.md',
+          '/components/s-list-group.md',
+
+          '/components/s-link.md',
           '/components/s-progress.md',
           '/components/s-spinner.md'
         ]
@@ -75,6 +77,7 @@ module.exports = {
         SCardSubtitle: path.resolve(__dirname, '../../src/components/SCardSubtitle.vue'),
         SCardText: path.resolve(__dirname, '../../src/components/SCardText.vue'),
         SCardTitle: path.resolve(__dirname, '../../src/components/SCardTitle.vue'),
+        SCollapse: path.resolve(__dirname, '../../src/components/SCollapse.vue'),
         SListGroup: path.resolve(__dirname, '../../src/components/SListGroup.vue'),
         SListGroupItem: path.resolve(__dirname, '../../src/components/SListGroupItem.vue'),
         SDropdown: path.resolve(__dirname, '../../src/components/SDropdown.vue'),
