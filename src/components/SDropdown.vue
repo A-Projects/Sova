@@ -1,7 +1,6 @@
 <template>
     <div :class="[
-        { 'btn-group': !dropdown },
-        { 'dropdown': dropdown },
+        [ variant === 'nav-item' ? 'nav-item dropdown' : variant],
         [ direction ]
     ]">
         <slot/>
@@ -16,10 +15,18 @@ import {createPopper} from '@popperjs/core'
 export default {
     name: 'SDropdown',
     props: {
-        dropdown: {
-            type: Boolean,
-            default: false,
+        variant: {
+            type: String,
+            default: 'btn-group',
             required: false,
+            validator: (x) => {
+                return [
+                    'btn-group',
+                    'dropdown',
+                    'input-group',
+                    'nav-item'
+                ].includes(x)
+            },
         },
         direction: {
             type: String,
@@ -45,7 +52,8 @@ export default {
             'toggleMenu': this.toggleMenu,
             'visible': computed(() => this.dropdownMenuShow),
             'setDropdownButton': this.setDropdownButton,
-            'setDropdownMenu': this.setDropdownMenu
+            'setDropdownMenu': this.setDropdownMenu,
+            'dropdownVariant': this.variant
         }
     },
     emits: [

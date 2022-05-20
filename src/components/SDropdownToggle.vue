@@ -1,5 +1,16 @@
 <template>
-    <component
+    <a v-if="dropdownVariant === 'nav-item'"
+        ref="dropdownButtonRef"
+        class="nav-link dropdown-toggle"
+        :class="[
+            { 'text-nowrap': nowrap },
+            { 'active': active },
+            { 'disabled': disabled } ]"
+        @click="toggleMenu"
+    >
+        <slot/>
+    </a>
+    <component v-else
         ref="dropdownButtonRef"
         :is="tag"
         :type="tag == 'button' || tag == 'input' ? type : undefined"
@@ -24,7 +35,7 @@ import {Color, Shape} from "../types.js";
 
 export default {
     name: 'SDropdownToggle',
-    inject: ['visible', 'toggleMenu', 'setDropdownButton'],
+    inject: ['visible', 'toggleMenu', 'setDropdownButton', 'dropdownVariant'],
     props: {
         tag: {
             type: String,
