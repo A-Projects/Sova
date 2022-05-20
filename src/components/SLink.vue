@@ -1,5 +1,5 @@
 <template>
-    <a
+    <component
         :is="to ? 'router-link' : 'a'"
         :class="[
             [ 'link-' + color ],
@@ -10,7 +10,7 @@
         :to="to"
     >
         <slot/>
-    </a>
+    </component>
 </template>
 
 <script>
