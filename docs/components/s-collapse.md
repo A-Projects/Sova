@@ -28,7 +28,6 @@
         </s-card-body>
     </s-card>
 </s-collapse>
-
 ```
 
 ### ТЗ
