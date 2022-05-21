@@ -30,6 +30,7 @@ module.exports = {
           '/components/s-link.md',
           '/components/s-modal.md',
           '/components/s-nav-tabs.md',
+          '/components/s-navbar.md',
           '/components/s-progress.md',
           '/components/s-spinner.md'
         ]
@@ -104,9 +105,16 @@ module.exports = {
         SNavTitle: path.resolve(__dirname, '../../src/components/SNav/SNavTitle.vue'),
         STabContent: path.resolve(__dirname, '../../src/components/STab/STabContent.vue'),
         STabPane: path.resolve(__dirname, '../../src/components/STab/STabPane.vue'),
+        SNavbar: path.resolve(__dirname, '../../src/components/SNavbar/SNavbar.vue'),
+        SNavbarBrand: path.resolve(__dirname, '../../src/components/SNavbar/SNavbarBrand.vue'),
+        SNavbarNav: path.resolve(__dirname, '../../src/components/SNavbar/SNavbarNav.vue'),
+        SNavbarText: path.resolve(__dirname, '../../src/components/SNavbar/SNavbarText.vue'),
+        SNavbarToggler: path.resolve(__dirname, '../../src/components/SNavbar/SNavbarToggler.vue'),
         SSpinner: path.resolve(__dirname, '../../src/components/SSpinner.vue'),
         SProgressBar: path.resolve(__dirname, '../../src/components/SProgressBar.vue'),
         SProgress: path.resolve(__dirname, '../../src/components/SProgress.vue'),
+
+        SContainer: path.resolve(__dirname, '../../src/layouts/SContainer.vue'),
       },
     }),
   ],
