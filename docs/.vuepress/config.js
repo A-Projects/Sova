@@ -34,7 +34,8 @@ module.exports = {
           '/components/s-offcanvas.md',
           '/components/s-pagination.md',
           '/components/s-progress.md',
-          '/components/s-spinner.md'
+          '/components/s-spinner.md',
+          '/components/s-tooltip.md',
         ]
       },
       {
@@ -119,12 +120,11 @@ module.exports = {
         SPagination: path.resolve(__dirname, '../../src/components/SPagination/SPagination.vue'),
         SPaginationItem: path.resolve(__dirname, '../../src/components/SPagination/SPaginationItem.vue'),
         SPaginationLink: path.resolve(__dirname, '../../src/components/SPagination/SPaginationLink.vue'),
-        SSpinner: path.resolve(__dirname, '../../src/components/SSpinner.vue'),
         SProgressBar: path.resolve(__dirname, '../../src/components/SProgressBar.vue'),
         SProgress: path.resolve(__dirname, '../../src/components/SProgress.vue'),
-
+        SSpinner: path.resolve(__dirname, '../../src/components/SSpinner.vue'),
         SContainer: path.resolve(__dirname, '../../src/layouts/SContainer.vue'),
-      },
+      }
     }),
   ],
 }

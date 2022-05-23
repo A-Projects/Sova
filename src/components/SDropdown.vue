@@ -82,7 +82,6 @@ export default {
             this.dropdownMenuRef = dropdownMenuRef;
         },
         constructPopper() {
-            console.debug(this.dropdownMenuPlacement);
             if(!this.popper && this.dropdownButtonRef && this.dropdownMenuRef) {
                 this.popper = createPopper(this.dropdownButtonRef, this.dropdownMenuRef, {
                     placement: this.dropdownMenuPlacement,
