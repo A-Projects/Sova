@@ -33,11 +33,11 @@
             </div>
         </div>
     </transition>
-    <s-modal-backdrop v-if="backdrop" class="modal-backdrop" :visible="show"/>
+    <s-backdrop v-if="backdrop" class="modal-backdrop" :visible="show"/>
 </template>
 
 <script>
-import SModalBackdrop from './SModalBackdrop.vue';
+import SModalBackdrop from '../SBackdrop.vue';
 export default {
     name: "SModal",
     components: {SModalBackdrop},

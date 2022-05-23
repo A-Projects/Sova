@@ -16,7 +16,7 @@
 
 <script>
 export default {
-    name: "SModalBackdrop",
+    name: "SBackdrop",
     props: {
         visible: {
             type: Boolean,
