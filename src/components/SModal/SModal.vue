@@ -37,10 +37,10 @@
 </template>
 
 <script>
-import SModalBackdrop from '../SBackdrop.vue';
+import SBackdrop from '../SBackdrop.vue';
 export default {
     name: "SModal",
-    components: {SModalBackdrop},
+    components: {SBackdrop},
     props: {
         alignment: {
             default: 'top',
