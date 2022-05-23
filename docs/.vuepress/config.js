@@ -31,6 +31,8 @@ module.exports = {
           '/components/s-modal.md',
           '/components/s-nav-tabs.md',
           '/components/s-navbar.md',
+          '/components/s-offcanvas.md',
+          '/components/s-pagination.md',
           '/components/s-progress.md',
           '/components/s-spinner.md'
         ]
@@ -110,6 +112,13 @@ module.exports = {
         SNavbarNav: path.resolve(__dirname, '../../src/components/SNavbar/SNavbarNav.vue'),
         SNavbarText: path.resolve(__dirname, '../../src/components/SNavbar/SNavbarText.vue'),
         SNavbarToggler: path.resolve(__dirname, '../../src/components/SNavbar/SNavbarToggler.vue'),
+        SOffcanvas: path.resolve(__dirname, '../../src/components/SOffcanvas/SOffcanvas.vue'),
+        SOffcanvasBody: path.resolve(__dirname, '../../src/components/SOffcanvas/SOffcanvasBody.vue'),
+        SOffcanvasHeader: path.resolve(__dirname, '../../src/components/SOffcanvas/SOffcanvasHeader.vue'),
+        SOffcanvasTitle: path.resolve(__dirname, '../../src/components/SOffcanvas/SOffcanvasTitle.vue'),
+        SPagination: path.resolve(__dirname, '../../src/components/SPagination/SPagination.vue'),
+        SPaginationItem: path.resolve(__dirname, '../../src/components/SPagination/SPaginationItem.vue'),
+        SPaginationLink: path.resolve(__dirname, '../../src/components/SPagination/SPaginationLink.vue'),
         SSpinner: path.resolve(__dirname, '../../src/components/SSpinner.vue'),
         SProgressBar: path.resolve(__dirname, '../../src/components/SProgressBar.vue'),
         SProgress: path.resolve(__dirname, '../../src/components/SProgress.vue'),
