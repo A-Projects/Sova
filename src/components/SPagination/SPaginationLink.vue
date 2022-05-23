@@ -1,6 +1,7 @@
 <template>
     <component :is="href || to ? (to ? 'router-link' : 'a') : tag"
         class="page-link"
+        :class="{ 'text-nowrap': nowrap }"
         :href="href"
         :to="to"
     >
@@ -26,7 +27,12 @@ export default {
             type: String || Object,
             default: undefined,
             required: false,
-        }
+        },
+        nowrap: {
+            type: Boolean,
+            default: false,
+            required: false,
+        },
     }
 };
 </script>
