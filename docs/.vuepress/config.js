@@ -33,8 +33,11 @@ module.exports = {
           '/components/s-navbar.md',
           '/components/s-offcanvas.md',
           '/components/s-pagination.md',
+          '/components/s-placeholder.md',
+          '/components/s-popover.md',
           '/components/s-progress.md',
           '/components/s-spinner.md',
+          '/components/s-toast.md',
           '/components/s-tooltip.md',
         ]
       },
@@ -124,6 +127,11 @@ module.exports = {
         SProgress: path.resolve(__dirname, '../../src/components/SProgress.vue'),
         SSpinner: path.resolve(__dirname, '../../src/components/SSpinner.vue'),
         SContainer: path.resolve(__dirname, '../../src/layouts/SContainer.vue'),
+        SToast: path.resolve(__dirname, '../../src/components/Toast/SToast.vue'),
+        SToastBody: path.resolve(__dirname, '../../src/components/Toast/SToastBody.vue'),
+        SToastClose: path.resolve(__dirname, '../../src/components/Toast/SToastClose.vue'),
+        SToastContainer: path.resolve(__dirname, '../../src/components/Toast/SToastContainer.vue'),
+        SToastHeader: path.resolve(__dirname, '../../src/components/Toast/SToastHeader.vue'),
       }
     }),
   ],
