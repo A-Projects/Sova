@@ -144,7 +144,7 @@
 
 <s-button class="me-1" disabled>
     <s-spinner size="sm" tag="span"/>
-    <span class="ms-1">Загрузка...</span>
+    <span class="ms-2">Загрузка...</span>
 </s-button>
 
 ``` vue
@@ -154,6 +154,6 @@
 
 <s-button class="me-1" disabled>
     <s-spinner size="sm" tag="span"/>
-    <span class="ms-1">Загрузка...</span>
+    <span class="ms-2">Загрузка...</span>
 </s-button>
 ```
