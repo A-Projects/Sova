@@ -1,4 +1,4 @@
-# Модалка
+# Диалоговые окна
 
 ТЗ
 
@@ -38,7 +38,7 @@
 
 <s-button color="primary" @click="() => { show1 = true }">Открыть</s-button>
 <s-modal :visible="show1" @close="() => { show1 = false }">
-    <s-modal-header>
+    <s-modal-header dismissible>
         <s-modal-title>Заголовок</s-modal-title>
     </s-modal-header>
     <s-modal-body>
@@ -62,7 +62,7 @@
 
 <s-button color="primary" @click="() => { show2 = true }">Открыть</s-button>
 <s-modal backdrop="static" :visible="show2" @close="() => { show2 = false }">
-    <s-modal-header>
+    <s-modal-header dismissible>
         <s-modal-title>Заголовок</s-modal-title>
     </s-modal-header>
     <s-modal-body>

@@ -12,7 +12,7 @@
                     {'alert-dismissible': dismissible},
                 ]">
             <slot/>
-            <s-close-button v-if="dismissible" v-on:click="onClose"/>
+            <s-close-button v-if="dismissible" v-on:close="onClose"/>
         </div>
     </transition>
 </template>

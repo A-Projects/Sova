@@ -2,8 +2,7 @@
     <button type="button" class="btn btn-close" :class="[
         { 'btn-close-white': white },
         { 'disabled': disabled }
-    ]" @click="onClick"/>
-
+    ]" v-on:click="onClick"/>
 </template>
 
 <script>
@@ -22,11 +21,11 @@ export default {
         }
     },
     emits: [
-        'click',
+        'close',
     ],
     methods: {
         onClick() {
-            this.$emit('click');
+            this.$emit('close')
         }
     }
 }
