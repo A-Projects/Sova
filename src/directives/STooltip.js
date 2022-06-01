@@ -1,5 +1,5 @@
 import {createPopper} from '@popperjs/core'
-import {v4 as uuidv4} from 'uuid';
+import {v4 as uuidv4} from 'uuid'
 
 function constructTooltip(tooltip, el, options) {
     document.body.appendChild(tooltip)
@@ -17,9 +17,10 @@ function destructTooltip(tooltip) {
 }
 
 export const STooltip = {
+    name: 's-tooltip',
     mounted(el, binding) {
         const value = binding.value
-        const title = typeof value === 'string' ? value : value.title ? value.title : ''
+        const content = typeof value === 'string' ? value : value.content ? value.content : ''
         const placement = value.placement ? value.placement : 'top'
         const offset = value.offset ? value.offset : [0, 0]
         const trigger = value.trigger ? value.trigger : 'hover'
@@ -40,9 +41,9 @@ export const STooltip = {
 
         const tooltip = document.createElement('div')
         tooltip.id = binding.uuid
-        tooltip.classList.add('tooltip', 'fade', 'bs-tooltip-auto')
+        tooltip.classList.add('tooltip', 'bs-tooltip-auto',  'fade')
         tooltip.innerHTML = `<div class="tooltip-arrow" data-popper-arrow></div>
-                                <div class="tooltip-inner">${title}</div>`
+                             <div class="tooltip-inner">${content}</div>`
 
         if(trigger.includes('click')) {
             el.addEventListener('click', () => {
@@ -75,7 +76,7 @@ export const STooltip = {
     },
     beforeUnmount(binding) {
         if(binding.uuid) {
-            document.getElementById(binding.uuid)?.remove();
+            document.getElementById(binding.uuid)?.remove()
         }
     },
 }
