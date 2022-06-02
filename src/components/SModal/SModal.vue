@@ -67,6 +67,10 @@ export default {
             default: undefined,
             required: false,
             validator: (x) => {
+                if (typeof x == 'boolean') {
+                    return true
+                }
+
                 if (typeof x == 'string') {
                     return [
                         'sm',
@@ -76,9 +80,7 @@ export default {
                         'xxl'
                     ].includes(x)
                 }
-                if (typeof x == 'boolean') {
-                    return true
-                }
+
                 return false
             },
         },
