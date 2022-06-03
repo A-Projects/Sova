@@ -10,7 +10,7 @@
   <s-card-body>
     <s-card-title>Заголовок карточки</s-card-title>
     <s-card-text>Некоторый, достаточно длинный текст, придуманный на скорую руку</s-card-text>
-    <s-button href="https://petplays.com.ua/ru/pticzy/domashnie-sovy-mogut-li-sovy-zhit-v-kvartire/">Перейти к источнику (Pets Play)</s-button>
+    <s-btn href="https://petplays.com.ua/ru/pticzy/domashnie-sovy-mogut-li-sovy-zhit-v-kvartire/">Перейти к источнику (Pets Play)</s-btn>
   </s-card-body>
 </s-card>
 
@@ -21,7 +21,7 @@
   <s-card-body>
     <s-card-title>Заголовок карточки</s-card-title>
     <s-card-text>Некоторый придуманный на скорую руку текст.</s-card-text>
-    <s-button href="#">Перейти сюда</s-button>
+    <s-btn href="#">Перейти сюда</s-btn>
   </s-card-body>
 </s-card>
 ```
@@ -141,7 +141,7 @@
   <s-card-body>
     <s-card-title>Специальный загловок</s-card-title>
     <s-card-text>Некоторый, достаточно длинный текст, придуманный на скорую руку</s-card-text>
-    <s-button href="#">Go куда-то</s-button>
+    <s-btn href="#">Go куда-то</s-btn>
   </s-card-body>
 </s-card>
 
@@ -158,7 +158,7 @@
   <s-card-body>
     <s-card-title>Специальный загловок</s-card-title>
     <s-card-text>Некоторый, достаточно длинный текст, придуманный на скорую руку</s-card-text>
-    <s-button href="#">Go куда-то</s-button>
+    <s-btn href="#">Go куда-то</s-btn>
   </s-card-body>
 </s-card>
 

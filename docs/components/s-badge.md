@@ -5,46 +5,46 @@
 ### Как использовать
 Т1
 
-<s-button color="primary">
+<s-btn color="primary">
   Уведомления <s-badge color="secondary">4</s-badge>
-</s-button>
+</s-btn>
 
 ``` vue
-<s-button color="primary">
+<s-btn color="primary">
   Уведомления <s-badge color="secondary">4</s-badge>
-</s-button>
+</s-btn>
 ```
 
 ### Позиция
 Т2
 
-<s-button color="primary" class="position-relative me-2">
+<s-btn color="primary" class="position-relative me-2">
     Входящие 
     <s-badge position="top-left" color="danger" shape="rounded-pill">
         +99
     </s-badge>
-</s-button>
+</s-btn>
 
-<s-button color="primary" class="position-relative me-5">
+<s-btn color="primary" class="position-relative me-5">
     Входящие 
     <s-badge position="top-right" color="danger" shape="rounded-pill">
         +99
     </s-badge>
-</s-button>
+</s-btn>
 
-<s-button color="primary" class="position-relative me-2">
+<s-btn color="primary" class="position-relative me-2">
     Входящие 
     <s-badge position="bottom-left" color="danger" shape="rounded-pill">
         +99
     </s-badge>
-</s-button>
+</s-btn>
 
-<s-button color="primary" class="position-relative">
+<s-btn color="primary" class="position-relative">
     Входящие 
     <s-badge position="bottom-right" color="danger" shape="rounded-pill">
         +99
     </s-badge>
-</s-button>
+</s-btn>
 
 ``` vue
 Т2
@@ -53,12 +53,12 @@
 ###  Модификация
 Т3
 
-<s-button color="primary" class="position-relative">
+<s-btn color="primary" class="position-relative">
   Profile
   <s-badge class="border border-light p-2" color="danger" position="top-right" shape="rounded-circle">
     <span class="visually-hidden">New alerts</span>
   </s-badge>
-</s-button>
+</s-btn>
 
 
 ``` vue

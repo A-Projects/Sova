@@ -5,13 +5,13 @@
 ### Как использовать
 Основной пример
 
-<s-button class="me-1" color="primary" v-s-popover="{title: 'Худая честь, когда нечего есть', content: 'Когда в товарищах согласья нет, На лад их дело не пойдет', placement: 'top'}" >
+<s-btn class="me-1" color="primary" v-s-popover="{title: 'Худая честь, когда нечего есть', content: 'Когда в товарищах согласья нет, На лад их дело не пойдет', placement: 'top'}" >
     Tooltip сверху
-</s-button>
+</s-btn>
 
-<s-button class="me-1" color="primary" v-s-popover="'Когда в товарищах согласья нет, На лад их дело не пойдет'">
+<s-btn class="me-1" color="primary" v-s-popover="'Когда в товарищах согласья нет, На лад их дело не пойдет'">
     Tooltip как строка
-</s-button>
+</s-btn>
 
 ``` vue
 <s-pagination aria-label="Page navigation example">

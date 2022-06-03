@@ -138,22 +138,22 @@
 ### Кнопки
 Можно использовать спиннеры в кнопках, чтобы указать, что действие в данный момент обрабатывается или выполняется.
 
-<s-button class="me-1" disabled>
+<s-btn class="me-1" disabled>
     <s-spinner size="sm"/>
-</s-button>
+</s-btn>
 
-<s-button class="me-1" disabled>
+<s-btn class="me-1" disabled>
     <s-spinner size="sm" tag="span"/>
     <span class="ms-2">Загрузка...</span>
-</s-button>
+</s-btn>
 
 ``` vue
-<s-button class="me-1" disabled>
+<s-btn class="me-1" disabled>
     <s-spinner size="sm"/>
-</s-button>
+</s-btn>
 
-<s-button class="me-1" disabled>
+<s-btn class="me-1" disabled>
     <s-spinner size="sm" tag="span"/>
     <span class="ms-2">Загрузка...</span>
-</s-button>
+</s-btn>
 ```

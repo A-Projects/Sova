@@ -12,18 +12,18 @@
                     {'alert-dismissible': dismissible},
                 ]">
             <slot/>
-            <s-close-button v-if="dismissible" v-on:close="onClose"/>
+            <s-btn-close v-if="dismissible" v-on:close="onClose"/>
         </div>
     </transition>
 </template>
 
 <script>
 import {Color} from "../types.js";
-import SCloseButton from "./SCloseButton.vue";
+import SBtnClose from "./SBtnClose.vue";
 
 export default {
     name: 'SAlert',
-    components: {SCloseButton},
+    components: {SBtnClose},
     props: {
         color: Color,
         dismissible: {

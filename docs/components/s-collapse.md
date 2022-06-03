@@ -5,7 +5,7 @@
 ### Как использовать
 Основной пример
 
-<s-button color="primary" @click="show1 = !show1">Click Me</s-button>
+<s-btn color="primary" @click="show1 = !show1">Click Me</s-btn>
 <s-collapse :visible="show1">
     <s-card class="mt-3">
         <s-card-body>
@@ -18,7 +18,7 @@
 
 
 ``` vue
-<s-button color="primary" @click="show = !show">Click Me</s-button>
+<s-btn color="primary" @click="show = !show">Click Me</s-btn>
 <s-collapse :visible="show">
     <s-card class="mt-3">
         <s-card-body>
@@ -33,7 +33,7 @@
 ### ТЗ
 ТЗ
 
-<s-button color="primary" @click="show2 = !show2">Click Me</s-button>
+<s-btn color="primary" @click="show2 = !show2">Click Me</s-btn>
 <s-collapse :visible="show2" horizontal>
     <s-card class="mt-3" style="width: 300px">
         <s-card-body>

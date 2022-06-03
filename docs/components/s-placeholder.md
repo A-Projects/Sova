@@ -12,7 +12,7 @@
     <s-card-text>
       Некоторый, достаточно длинный текст, придуманный на скорую руку
     </s-card-text>
-    <s-button color="primary" href="#">Перейти к источнику</s-button>
+    <s-btn color="primary" href="#">Перейти к источнику</s-btn>
   </s-card-body>
 </s-card>
 <s-card style="width: 18rem">
@@ -28,7 +28,7 @@
       <span v-s-placeholder="{col: 6}" />
       <span v-s-placeholder="{col: 8}" />
     </s-card-text>
-    <s-button v-s-placeholder="{col: 8}" color="primary" disabled href="#" tabindex="-1"></s-button>
+    <s-btn v-s-placeholder="{col: 8}" color="primary" disabled href="#" tabindex="-1"></s-btn>
   </s-card-body>
 </s-card>
 </div>
@@ -41,7 +41,7 @@
     <s-card-text>
       Некоторый, достаточно длинный текст, придуманный на скорую руку
     </s-card-text>
-    <s-button color="primary" href="#">Перейти к источнику</s-button>
+    <s-btn color="primary" href="#">Перейти к источнику</s-btn>
   </s-card-body>
 </s-card>
 <s-card style="width: 18rem">
@@ -57,7 +57,7 @@
       <span v-s-placeholder="{col: 6}" />
       <span v-s-placeholder="{col: 8}" />
     </s-card-text>
-    <s-button v-s-placeholder="{col: 8}" color="primary" disabled href="#" tabindex="-1"></s-button>
+    <s-btn v-s-placeholder="{col: 8}" color="primary" disabled href="#" tabindex="-1"></s-btn>
   </s-card-body>
 </s-card>
 ```

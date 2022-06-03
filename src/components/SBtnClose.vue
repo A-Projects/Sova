@@ -7,7 +7,7 @@
 
 <script>
 export default {
-    name: 'SCloseButton',
+    name: 'SBtnClose',
     props: {
         disabled: {
             type: Boolean,

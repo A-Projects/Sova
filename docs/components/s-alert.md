@@ -31,17 +31,17 @@
 <s-alert color="primary" :visible="show" dismissible @close="() => { show = false }">
     Простое оповещение. Для проверки!
 </s-alert>
-<s-button color="primary" @click="() => { show = true }">
+<s-btn color="primary" @click="() => { show = true }">
     Показать оповещение
-</s-button>
+</s-btn>
 
 ``` vue
 <s-alert color="primary" :visible="show" dismissible @close="() => { show = false }">
     Простое оповещение. Для проверки!
 </s-alert>
-<s-button color="primary" @click="() => { show = true }">
+<s-btn color="primary" @click="() => { show = true }">
     Показать оповещение
-</s-button>
+</s-btn>
 ```
 
 ### Ссылки

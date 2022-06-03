@@ -27,7 +27,7 @@ createApp(App)
 ``` vue
 <template>
     <div>
-        <s-button color="primary"/>
+        <s-btn color="primary"/>
         <s-input disabled/>
     </div>
 </template>

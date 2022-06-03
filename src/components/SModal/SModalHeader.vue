@@ -1,15 +1,15 @@
 <template>
     <span class="modal-header">
         <slot/>
-        <s-close-button v-if="dismissible" v-on:close="onClose"/>
+        <s-btn-close v-if="dismissible" v-on:close="onClose"/>
     </span>
 </template>
 
 <script>
-import SCloseButton from '../SCloseButton.vue';
+import SBtnClose from '../SBtnClose.vue';
 export default {
     name: "SModalHeader",
-    components: {SCloseButton},
+    components: {SBtnClose},
     props: {
         dismissible: {
             type: Boolean,

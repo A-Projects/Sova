@@ -58,7 +58,7 @@
 ТЗ
 
 <s-dropdown>
-    <s-button color="primary">Выпадающее меню</s-button>
+    <s-btn color="primary">Выпадающее меню</s-btn>
     <s-dropdown-toggle color="primary" split></s-dropdown-toggle>
     <s-dropdown-menu>
         <s-dropdown-item href="#">Элемент 1</s-dropdown-item>
@@ -85,7 +85,7 @@
 </s-dropdown>
 
 <s-dropdown>
-    <s-button color="secondary" size="lg">Разделённая кнопка</s-button>
+    <s-btn color="secondary" size="lg">Разделённая кнопка</s-btn>
     <s-dropdown-toggle color="secondary" size="lg" split></s-dropdown-toggle>
     <s-dropdown-menu>
         <s-dropdown-item href="#">Элемент 1</s-dropdown-item>
@@ -106,7 +106,7 @@
 </s-dropdown>
 
 <s-dropdown>
-    <s-button color="secondary" size="sm">Разделённая кнопка</s-button>
+    <s-btn color="secondary" size="sm">Разделённая кнопка</s-btn>
     <s-dropdown-toggle color="secondary" size="sm" split></s-dropdown-toggle>
     <s-dropdown-menu>
         <s-dropdown-item href="#">Элемент 1</s-dropdown-item>
@@ -151,7 +151,7 @@
 </s-dropdown>
 
 <s-dropdown direction="dropup" class="me-1">
-    <s-button color="secondary">Вверх разделённая</s-button>
+    <s-btn color="secondary">Вверх разделённая</s-btn>
     <s-dropdown-toggle color="secondary" split/>
     <s-dropdown-menu>
         <s-dropdown-item href="#">Элемент 1</s-dropdown-item>
@@ -177,7 +177,7 @@
 </s-dropdown>
 
 <s-dropdown direction="dropend" class="me-1">
-    <s-button color="secondary">Вправо разделённая</s-button>
+    <s-btn color="secondary">Вправо разделённая</s-btn>
     <s-dropdown-toggle color="secondary" split/>
     <s-dropdown-menu>
         <s-dropdown-item href="#">Элемент 1</s-dropdown-item>
@@ -202,7 +202,7 @@
     </s-dropdown-menu>
 </s-dropdown>
 
-<s-button-group>
+<s-btn-group>
     <s-dropdown direction="dropstart">
         <s-dropdown-toggle color="secondary" split/>
         <s-dropdown-menu>
@@ -211,8 +211,8 @@
             <s-dropdown-item href="#">Элемент 3</s-dropdown-item>
         </s-dropdown-menu>
     </s-dropdown>
-    <s-button color="secondary">Влево разделённая</s-button>
-</s-button-group>
+    <s-btn color="secondary">Влево разделённая</s-btn>
+</s-btn-group>
 
 ``` vue
 ТЗ
@@ -222,7 +222,7 @@
 ТЗ
 
 <s-dropdown>
-    <s-button color="primary">Меню</s-button>
+    <s-btn color="primary">Меню</s-btn>
     <s-dropdown-toggle color="primary" split></s-dropdown-toggle>
     <s-dropdown-menu>
         <s-dropdown-header>Заголовок</s-dropdown-header>

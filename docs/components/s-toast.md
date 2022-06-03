@@ -36,7 +36,7 @@
 ### ТЗ
 ТЗ
 
-<s-button color="primary" @click="createToast">Отправить уведомление</s-button>
+<s-btn color="primary" @click="createToast">Отправить уведомление</s-btn>
 <s-toast-container placement="top-end">
     <s-toast v-for="(toast, index) in toasts">
         <s-toast-header dismissible>
@@ -72,7 +72,7 @@
 
 
 ``` vue
-<s-button color="primary" @click="createToast">Отправить уведомление</s-button>
+<s-btn color="primary" @click="createToast">Отправить уведомление</s-btn>
 <s-toast-container placement="top-end">
     <s-toast v-for="(toast, index) in toasts">
         <s-toast-header>
