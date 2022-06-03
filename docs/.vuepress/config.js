@@ -43,6 +43,13 @@ module.exports = {
         ]
       },
       {
+        text: 'Формы',
+        collapsable: true,
+        children: [
+          '/forms/s-check.md',
+        ]
+      },
+      {
         text: 'Директивы',
         collapsable: true,
         children: [
@@ -153,6 +160,10 @@ module.exports = {
         SToastClose: path.resolve(__dirname, '../../src/components/Toast/SToastClose.vue'),
         SToastContainer: path.resolve(__dirname, '../../src/components/Toast/SToastContainer.vue'),
         SToastHeader: path.resolve(__dirname, '../../src/components/Toast/SToastHeader.vue'),
+
+
+        SCheck: path.resolve(__dirname, '../../src/forms/SCheck.vue'),
+        SLabel: path.resolve(__dirname, '../../src/forms/SLabel.vue'),
       }
     }),
   ],
