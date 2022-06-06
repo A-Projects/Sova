@@ -47,6 +47,8 @@ module.exports = {
         collapsable: true,
         children: [
           '/forms/s-check.md',
+          '/forms/s-input.md',
+          '/forms/s-range.md',
         ]
       },
       {
@@ -161,9 +163,15 @@ module.exports = {
         SToastContainer: path.resolve(__dirname, '../../src/components/Toast/SToastContainer.vue'),
         SToastHeader: path.resolve(__dirname, '../../src/components/Toast/SToastHeader.vue'),
 
-
+        SBtnCheck: path.resolve(__dirname, '../../src/forms/SBtnCheck.vue'),
         SCheck: path.resolve(__dirname, '../../src/forms/SCheck.vue'),
+        SColor: path.resolve(__dirname, '../../src/forms/SColor.vue'),
+        SFeedback: path.resolve(__dirname, '../../src/forms/SFeedback.vue'),
+        SForm: path.resolve(__dirname, '../../src/forms/SForm.vue'),
+        SInput: path.resolve(__dirname, '../../src/forms/SInput.vue'),
         SLabel: path.resolve(__dirname, '../../src/forms/SLabel.vue'),
+        SRange: path.resolve(__dirname, '../../src/forms/SRange.vue'),
+        SText: path.resolve(__dirname, '../../src/forms/SText.vue'),
       }
     }),
   ],
