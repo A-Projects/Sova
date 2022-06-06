@@ -4,7 +4,7 @@
             { ['table-responsive']: typeof responsive === 'boolean' },
             { [`table-responsive-${responsive}`]: typeof responsive === 'string' },
         ]">
-        <table v-bind="$attrs" class="table"
+        <table class="table"
             :class="[
                 { [`align-${align}`]: align },
                 { [`caption-${caption}`]: caption },
@@ -19,7 +19,7 @@
             <slot/>
         </table>
     </div>
-    <table v-else v-bind="$attrs" class="table"
+    <table v-else class="table"
         :class="[
             { [`align-${align}`]: align },
             { [`caption-${caption}`]: caption },
@@ -39,7 +39,6 @@
 import { Color } from '../../types.js';
 export default {
     name: "STable",
-    inheritAttrs: false,
     props: {
         align: {
             type: String,
