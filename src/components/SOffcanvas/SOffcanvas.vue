@@ -24,6 +24,7 @@ import SBackdrop from '../SBackdrop.vue';
 export default {
     name: "SOffcanvas",
     components: {SBackdrop},
+    inheritAttrs: false,
     props: {
         backdrop: {
             type: Boolean,

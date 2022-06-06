@@ -19,7 +19,7 @@
             <slot/>
         </table>
     </div>
-    <table v-else class="table"
+    <table v-else v-bind="$attrs" class="table"
         :class="[
             { [`align-${align}`]: align },
             { [`caption-${caption}`]: caption },
@@ -39,6 +39,7 @@
 import { Color } from '../../types.js';
 export default {
     name: "STable",
+    inheritAttrs: false,
     props: {
         align: {
             type: String,

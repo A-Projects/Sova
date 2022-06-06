@@ -41,6 +41,7 @@ import SBackdrop from '../SBackdrop.vue';
 export default {
     name: "SModal",
     components: {SBackdrop},
+    inheritAttrs: false,
     props: {
         alignment: {
             default: 'top',
