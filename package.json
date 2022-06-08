@@ -36,6 +36,8 @@
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@vuepress/bundler-webpack": "^2.0.0-beta.46",
     "@vuepress/plugin-register-components": "^2.0.0-beta.46",
+    "@vuepress/theme-default": "^2.0.0-beta.46",
+    "@vuepress/utils": "^2.0.0-beta.46",
     "rollup": "^2.75.6",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-vue": "^6.0.0",

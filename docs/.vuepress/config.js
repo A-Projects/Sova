@@ -1,4 +1,4 @@
-const { path } = require('@vuepress/utils')
+  const { path } = require('@vuepress/utils')
 const { defaultTheme } = require('@vuepress/theme-default')
 const { registerComponentsPlugin } = require('@vuepress/plugin-register-components')
 //const { webpackBundler } = require('@vuepress/bundler-webpack')
@@ -60,6 +60,7 @@ module.exports = {
           '/forms/s-check.md',
           '/forms/s-input.md',
           '/forms/s-range.md',
+          '/forms/s-select.md',
         ]
       },
       {
@@ -186,6 +187,7 @@ module.exports = {
         SFormColor: path.resolve(__dirname, '../../src/components/Form/SFormColor.vue'),
         SFormInput: path.resolve(__dirname, '../../src/components/Form/SFormInput.vue'),
         SFormTextarea: path.resolve(__dirname, '../../src/components/Form/SFormTextarea.vue'),
+        SFormSelect: path.resolve(__dirname, '../../src/components/Form/SFormSelect.vue'),
       }
     }),
   ],
