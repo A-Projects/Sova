@@ -1,13 +1,24 @@
 const { path } = require('@vuepress/utils')
 const { defaultTheme } = require('@vuepress/theme-default')
 const { registerComponentsPlugin } = require('@vuepress/plugin-register-components')
+//const { webpackBundler } = require('@vuepress/bundler-webpack')
 
 module.exports = {
   // site config
   lang: 'ru-RU',
   title: 'Сови',
   description: 'Компоненты Vue.js на основе Bootstrap',
-
+/*
+  bundler: webpackBundler({
+    chainWebpack: config => {
+      config.resolve.extensions.add('.js')
+      config.resolve.extensions.add('.vue')
+      config.resolve.extensions.add('.json')
+    },
+    postcss: {},
+    vue: {},
+  }),
+*/
   // https://v2.vuepress.vuejs.org/reference/default-theme/config.html
   theme: defaultTheme({
     logo: '/sovi.png',
@@ -163,15 +174,18 @@ module.exports = {
         SToastContainer: path.resolve(__dirname, '../../src/components/Toast/SToastContainer.vue'),
         SToastHeader: path.resolve(__dirname, '../../src/components/Toast/SToastHeader.vue'),
 
-        SBtnCheck: path.resolve(__dirname, '../../src/forms/SBtnCheck.vue'),
-        SCheck: path.resolve(__dirname, '../../src/forms/SCheck.vue'),
-        SColor: path.resolve(__dirname, '../../src/forms/SColor.vue'),
-        SFeedback: path.resolve(__dirname, '../../src/forms/SFeedback.vue'),
-        SForm: path.resolve(__dirname, '../../src/forms/SForm.vue'),
-        SInput: path.resolve(__dirname, '../../src/forms/SInput.vue'),
-        SLabel: path.resolve(__dirname, '../../src/forms/SLabel.vue'),
-        SRange: path.resolve(__dirname, '../../src/forms/SRange.vue'),
-        SText: path.resolve(__dirname, '../../src/forms/SText.vue'),
+        SForm: path.resolve(__dirname, '../../src/components/Form/SForm.vue'),
+        SFormBtnCheck: path.resolve(__dirname, '../../src/components/Form/SFormBtnCheck.vue'),
+        SFormCheck: path.resolve(__dirname, '../../src/components/Form/SFormCheck.vue'),
+        SFormFeedback: path.resolve(__dirname, '../../src/components/Form/SFormFeedback.vue'),
+        SFormFloating: path.resolve(__dirname, '../../src/components/Form/SFormFloating.vue'),
+        SFormLabel: path.resolve(__dirname, '../../src/components/Form/SFormLabel.vue'),
+        SFormRange: path.resolve(__dirname, '../../src/components/Form/SFormRange.vue'),
+        SFormSwitch: path.resolve(__dirname, '../../src/components/Form/SFormSwitch.vue'),
+        SFormText: path.resolve(__dirname, '../../src/components/Form/SFormText.vue'),
+        SInputColor: path.resolve(__dirname, '../../src/components/Input/SInputColor.vue'),
+        SInputText: path.resolve(__dirname, '../../src/components/Input/SInputText.vue'),
+        SInputTextarea: path.resolve(__dirname, '../../src/components/Input/SInputTextarea.vue'),
       }
     }),
   ],
