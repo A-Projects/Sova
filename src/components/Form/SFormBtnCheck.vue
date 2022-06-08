@@ -1,9 +1,9 @@
 <template>
-    <input :id="id" :type="type" class="btn-check" :indeterminate="indeterminate" v-bind:checked="modelValue" v-on:change="onChange"
-           :class="[
-                { 'is-valid': typeof valid !== 'undefined' && valid },
-                { 'is-invalid': typeof valid !== 'undefined' && !valid }
-            ]"
+    <input :id="id" :type="type" class="btn-check" :checked="modelValue" @change="onChange"
+        :class="[
+            {'is-invalid': invalid},
+            {'is-valid': valid}
+        ]"
     />
     <label v-bind="$attrs" class="btn" :for="id"
         :class="[
@@ -17,10 +17,11 @@
 </template>
 
 <script>
-import {Color, Shape} from '../types.js'
 import {v4 as uuidv4} from 'uuid'
+import {Color, Shape} from '../../types.js'
+
 export default {
-    name: "SBtnCheck",
+    name: "SFormBtnCheck",
     inheritAttrs: false,
     props: {
         id: {
@@ -43,25 +44,8 @@ export default {
                 ].includes(x)
             },
         },
-        outline: {
-            type: Boolean,
-            default: false,
-            required: false,
-        },
-        indeterminate: {
-            type: Boolean,
-            default: false,
-            required: false
-        },
-        inline: {
-            type: Boolean,
-            required: false,
-        },
-        label: {
-            type: String,
-            default: undefined,
-            required: false,
-        },
+        outline: Boolean,
+        label: String,
         type: {
             type: String,
             default: 'checkbox',
@@ -73,15 +57,9 @@ export default {
                 ].includes(x)
             }
         },
-        valid: {
-            type: Boolean,
-            default: undefined,
-            required: false
-        },
-        modelValue: {
-            type: Boolean,
-            required: false
-        },
+        valid: Boolean,
+        invalid: Boolean,
+        modelValue: Boolean
     },
     emits: [
         'change',

@@ -1,24 +1,33 @@
 <template>
-    <div v-if="label">
-        <s-label class="form-label" :for="id">{{ label }}</s-label>
-        <input class="form-control form-control-color" :id="id" type="color" v-bind:value="modelValue" @change="onChange" @input="onInput"
+    <s-form-wrapper v-if="label"
+        :forId="id"
+        :label="label"
+        :label-first="true"
+        :w-class="this.class"
+        :w-style="this.style"
+    >
+        <input v-bind="$attrs" :id="id" type="color" class="form-control form-control-color" :value="modelValue" @change="onChange"
             :class="[
                 {[`form-control-${size}`]: size}
             ]"
         />
-        Значение: {{ modelValue }}
-    </div>
-    <input v-else class="form-control form-control-color" :id="id" type="color" v-bind:value="modelValue" @change="onChange" @input="onInput"
+    </s-form-wrapper>
+    <input v-else v-bind="$attrs" :id="id" :style="this.style"  type="color" class="form-control form-control-color" :value="modelValue" @change="onChange"
         :class="[
-            {[`form-control-${size}`]: size}
+            {[`form-control-${size}`]: size},
+            this.class
         ]"
     />
 </template>
 
 <script>
 import {v4 as uuidv4} from 'uuid'
+import SFormWrapper from '../Form/SFormWrapper.vue'
+
 export default {
-    name: "SInputText",
+    name: "SInputColor",
+    components: {SFormWrapper},
+    inheritAttrs: false,
     props: {
         id: {
             type: String,
@@ -27,11 +36,7 @@ export default {
             },
             require: false
         },
-        modelValue: {
-            type: String,
-            default: undefined,
-            require: false,
-        },
+        modelValue: String,
         size: {
             type: String,
             default: undefined,
@@ -43,24 +48,17 @@ export default {
                 ].includes(x)
             },
         },
-        label: {
-            type: String,
-            default: undefined,
-            required: false,
-        }
+        label: String,
+        class: String,
+        style: String,
     },
     emits: [
         'change',
-        'input',
         'update:modelValue',
     ],
     methods: {
         onChange(event) {
             this.$emit('change');
-            this.$emit('update:modelValue', event.target.value)
-        },
-        onInput(event) {
-            this.$emit('input');
             this.$emit('update:modelValue', event.target.value)
         }
     }

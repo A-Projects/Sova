@@ -1,7 +1,6 @@
 <template>
     <form :class="[
-        {'was-validated': typeof valid !== 'undefined' && valid},
-        {'form-floating': floating}
+        {'was-validated': typeof valid !== 'undefined' && valid}
     ]">
         <slot/>
     </form>

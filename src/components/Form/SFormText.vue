@@ -6,7 +6,7 @@
 
 <script>
 export default {
-    name: "SText",
+    name: "SFormText",
     props: {
         tag: {
             type: String,

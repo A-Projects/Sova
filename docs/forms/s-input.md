@@ -4,24 +4,20 @@
 
 ### Как использовать
 Основной пример
-<s-input class="mb-2" placeholder="Песочная, д. 35" label="Адрес"/>
-<s-input class="mb-2" placeholder="Песочная, д. 35" label="Адрес" floating/>
 
-<s-input class="mb-2" placeholder="Песочная, д. 35" label="Адрес" feedback="Адрес найден" :valid="true"/>
-<s-input class="mb-2" placeholder="Песочная, д. 35" label="Адрес" feedback="Адрес не найден" :valid="false" floating/>
+<s-form-label for="i0001">Адрес</s-form-label>
+<s-input-text id="i0001" class="mb-5" placeholder="Песочная, д. 35"/>
 
-<p>
-<s-color class="mb-2" label="Цвет" v-model="color" :valid="false"/>
-</p>
+<s-input-text class="mb-5" placeholder="Песочная, д. 35" label="Адрес" feedback="Адрес найден" valid/>
+<s-input-text class="mb-5" placeholder="Песочная, д. 35" label="Адрес" feedback="Адрес не найден" invalid floating/>
+
+<s-input-color class="mb-5" label="Цвет" v-model="color"/>
+
+<s-input-textarea class="mb-5" placeholder="Песочная, д. 35" label="Адрес" feedback="Адрес не найден" rows="3" floating/>
 
 ``` vue
-<s-input class="mb-2" placeholder="Песочная, д. 35" label="Адрес"/>
-<s-input class="mb-2" placeholder="Песочная, д. 35" label="Адрес" floating/>
-
-<s-input class="mb-2" placeholder="Песочная, д. 35" label="Адрес" feedback="Адрес найден" :valid="true"/>
-<s-input class="mb-2" placeholder="Песочная, д. 35" label="Адрес" feedback="Адрес не найден" :valid="false" floating/>
+ТЗ
 ```
-
 
 <script>
 export default {
