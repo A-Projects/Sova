@@ -1,28 +1,25 @@
 <template>
-    <s-form-wrapper v-if="label || feedback || floating"
+    <s-form-wrapper v-if="label || feedback"
         :for-id="id"
         :label="label"
-        :label-first="!floating"
+        :label-first="true"
         :feedback="feedback"
-        :floating="floating"
         :invalid="invalid"
         :valid="valid"
         :w-class="this.class"
         :w-style="this.style"
     >
-        <input v-bind="$attrs" :id="id" :type="type" :placeholder="placeholder" :value="modelValue" @change="onChange" @input="onInput"
+        <textarea v-bind="$attrs" :id="id" ::placeholder="placeholder" :value="modelValue" @change="onChange" @input="onInput"
             :class="[
                 [plaintext ? 'form-control-plaintext' : 'form-control'],
-                {[`form-control-${size}`]: size},
                 {'is-invalid': invalid},
                 {'is-valid': valid}
             ]"
         />
     </s-form-wrapper>
-    <input v-else v-bind="$attrs" :style="this.style" :id="id" :type="type" :placeholder="placeholder" :value="modelValue" @change="onChange" @input="onInput"
+    <textarea v-else v-bind="$attrs" :style="this.style" :id="id" :placeholder="placeholder" :value="modelValue" @change="onChange" @input="onInput"
         :class="[
             [plaintext ? 'form-control-plaintext' : 'form-control'],
-            {[`form-control-${size}`]: size},
             {'is-invalid': invalid},
             {'is-valid': valid},
             this.class
@@ -32,10 +29,10 @@
 
 <script>
 import {v4 as uuidv4} from 'uuid'
-import SFormWrapper from '../Form/SFormWrapper.vue'
+import SFormWrapper from './SFormWrapper.vue'
 
 export default {
-    name: "SInputText",
+    name: "SFormTextarea",
     components: {SFormWrapper},
     inheritAttrs: false,
     props: {
@@ -46,33 +43,10 @@ export default {
             },
             require: false
         },
-        type: {
-            type: String,
-            default: 'text',
-            require: false,
-            validator: (x) => {
-                return [
-                    'text',
-                    'email'
-                ].includes(x)
-            },
-        },
         modelValue: String,
         plaintext: Boolean,
-        size: {
-            type: String,
-            default: undefined,
-            require: false,
-            validator: (x) => {
-                return [
-                    'sm',
-                    'lg'
-                ].includes(x)
-            },
-        },
         placeholder: String,
         feedback: String,
-        floating: Boolean,
         label: String,
         invalid: Boolean,
         valid: Boolean,

@@ -22,10 +22,10 @@
 
 <script>
 import {v4 as uuidv4} from 'uuid'
-import SFormWrapper from '../Form/SFormWrapper.vue'
+import SFormWrapper from './SFormWrapper.vue'
 
 export default {
-    name: "SInputColor",
+    name: "SFormColor",
     components: {SFormWrapper},
     inheritAttrs: false,
     props: {

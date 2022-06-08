@@ -183,9 +183,9 @@ module.exports = {
         SFormRange: path.resolve(__dirname, '../../src/components/Form/SFormRange.vue'),
         SFormSwitch: path.resolve(__dirname, '../../src/components/Form/SFormSwitch.vue'),
         SFormText: path.resolve(__dirname, '../../src/components/Form/SFormText.vue'),
-        SInputColor: path.resolve(__dirname, '../../src/components/Input/SInputColor.vue'),
-        SInputText: path.resolve(__dirname, '../../src/components/Input/SInputText.vue'),
-        SInputTextarea: path.resolve(__dirname, '../../src/components/Input/SInputTextarea.vue'),
+        SFormColor: path.resolve(__dirname, '../../src/components/Form/SFormColor.vue'),
+        SFormInput: path.resolve(__dirname, '../../src/components/Form/SFormInput.vue'),
+        SFormTextarea: path.resolve(__dirname, '../../src/components/Form/SFormTextarea.vue'),
       }
     }),
   ],
