@@ -187,6 +187,8 @@ module.exports = {
         SFormText: path.resolve(__dirname, '../../src/components/Form/SFormText.vue'),
         SFormColor: path.resolve(__dirname, '../../src/components/Form/SFormColor.vue'),
         SFormInput: path.resolve(__dirname, '../../src/components/Form/SFormInput.vue'),
+        SFormFile: path.resolve(__dirname, '../../src/components/Form/SFormFile.vue'),
+        SFormNumber: path.resolve(__dirname, '../../src/components/Form/SFormNumber.vue'),
         SFormTextarea: path.resolve(__dirname, '../../src/components/Form/SFormTextarea.vue'),
         SFormSelect: path.resolve(__dirname, '../../src/components/Form/SFormSelect.vue'),
         SInputGroup: path.resolve(__dirname, '../../src/components/Form/SInputGroup.vue'),
