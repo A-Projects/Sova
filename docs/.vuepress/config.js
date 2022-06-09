@@ -61,6 +61,7 @@ module.exports = {
           '/forms/s-input.md',
           '/forms/s-range.md',
           '/forms/s-select.md',
+          '/forms/s-input-group.md'
         ]
       },
       {
@@ -188,6 +189,8 @@ module.exports = {
         SFormInput: path.resolve(__dirname, '../../src/components/Form/SFormInput.vue'),
         SFormTextarea: path.resolve(__dirname, '../../src/components/Form/SFormTextarea.vue'),
         SFormSelect: path.resolve(__dirname, '../../src/components/Form/SFormSelect.vue'),
+        SInputGroup: path.resolve(__dirname, '../../src/components/Form/SInputGroup.vue'),
+        SInputGroupText: path.resolve(__dirname, '../../src/components/Form/SInputGroupText.vue'),
       }
     }),
   ],
