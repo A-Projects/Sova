@@ -24,6 +24,13 @@ module.exports = {
     logo: '/sovi.png',
     sidebar: [
       {
+        text: 'Разметка',
+        collapsable: true,
+        children: [
+          '/layout/grid.md',
+        ]
+      },
+      {
         text: 'Компоненты',
         collapsable: true,
         children: [
@@ -36,6 +43,7 @@ module.exports = {
           '/components/s-card.md',
           '/components/s-btn-close.md',
           '/components/s-collapse.md',
+          '/components/s-callout.md',
           '/components/s-dropdown.md',
           '/components/s-figure.md',
           '/components/s-icon.md',
@@ -93,6 +101,11 @@ module.exports = {
   plugins: [
     registerComponentsPlugin({
       components: {
+        // Разметка
+        SCol: path.resolve(__dirname, '../../src/components/Grid/SCol.vue'),
+        SRow: path.resolve(__dirname, '../../src/components/Grid/SRow.vue'),
+        SContainer: path.resolve(__dirname, '../../src/components/Grid/SContainer.vue'),
+        // Компоненты
         SAccordion: path.resolve(__dirname, '../../src/components/SAccordion.vue'),
         SAccordionBody: path.resolve(__dirname, '../../src/components/SAccordionBody.vue'),
         SAccordionButton: path.resolve(__dirname, '../../src/components/SAccordionButton.vue'),
@@ -161,7 +174,7 @@ module.exports = {
         SProgressBar: path.resolve(__dirname, '../../src/components/SProgressBar.vue'),
         SProgress: path.resolve(__dirname, '../../src/components/SProgress.vue'),
         SSpinner: path.resolve(__dirname, '../../src/components/SSpinner.vue'),
-        SContainer: path.resolve(__dirname, '../../src/layouts/SContainer.vue'),
+        SCallout: path.resolve(__dirname, '../../src/components/Callout/SCallout.vue'),
         STable: path.resolve(__dirname, '../../src/components/Table/STable.vue'),
         STableBody: path.resolve(__dirname, '../../src/components/Table/STableBody.vue'),
         STableCaption: path.resolve(__dirname, '../../src/components/Table/STableCaption.vue'),
@@ -175,7 +188,7 @@ module.exports = {
         SToastClose: path.resolve(__dirname, '../../src/components/Toast/SToastClose.vue'),
         SToastContainer: path.resolve(__dirname, '../../src/components/Toast/SToastContainer.vue'),
         SToastHeader: path.resolve(__dirname, '../../src/components/Toast/SToastHeader.vue'),
-
+        // Формы
         SForm: path.resolve(__dirname, '../../src/components/Form/SForm.vue'),
         SFormBtnCheck: path.resolve(__dirname, '../../src/components/Form/SFormBtnCheck.vue'),
         SFormCheck: path.resolve(__dirname, '../../src/components/Form/SFormCheck.vue'),
