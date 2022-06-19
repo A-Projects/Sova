@@ -68,3 +68,13 @@
   </s-container>
 </s-navbar>
 ```
+
+<script>
+  export default {
+    data() {
+      return { 
+        visible: false,
+      }
+    }
+  }
+</script>

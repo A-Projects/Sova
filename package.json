@@ -1,54 +1,54 @@
 {
-  "name": "@a-projects/sovi",
-  "description": "Boostrap 5 components on Vue.js",
-  "version": "1.0.0",
-  "private": false,
-  "author": {
-    "name": "Andrey Baryshkin",
-    "email": "baryshkin_aa@codeblast.ru"
-  },
-  "repository": "https://github.com/A-Projects/Sovi",
-  "bugs": "https://github.com/A-Projects/Sovi/issues",
-  "license": "MIT",
-  "keywords": [
-    "vue",
-    "boostrap",
-    "vue component",
-    "vue bootstrap",
-    "bootstrap vue"
-  ],
-  "main": "dist/library.js",
-  "module": "dist/library.mjs",
-  "files": [
-    "dist/*"
-  ],
-  "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
-    "libs:build": "rollup -c"
-  },
-  "peerDependencies": {
-    "uuid": "^8.3.2",
-    "vue": "^3.2.37"
-  },
-  "devDependencies": {
-    "@rollup/plugin-commonjs": "^22.0.0",
-    "@rollup/plugin-node-resolve": "^13.3.0",
-    "@vuepress/bundler-webpack": "^2.0.0-beta.46",
-    "@vuepress/plugin-register-components": "^2.0.0-beta.46",
-    "@vuepress/theme-default": "^2.0.0-beta.46",
-    "@vuepress/utils": "^2.0.0-beta.46",
-    "rollup": "^2.75.6",
-    "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-vue": "^6.0.0",
-    "sass-loader": "^13.0.0",
-    "vuepress": "^2.0.0-beta.46"
-  },
-  "dependencies": {
-    "@popperjs/core": "^2.11.5",
-    "bootstrap": "^5.1.3",
-    "bootstrap-icons": "^1.8.3",
-    "uuid": "^8.3.2",
-    "vue": "^3.2.37"
-  }
+    "name": "@a-projects/sovi",
+    "description": "Boostrap 5 components on Vue.js",
+    "version": "1.0.0",
+    "private": false,
+    "author": {
+        "name": "Andrey Baryshkin",
+        "email": "baryshkin_aa@codeblast.ru"
+    },
+    "repository": "https://github.com/A-Projects/Sovi",
+    "bugs": "https://github.com/A-Projects/Sovi/issues",
+    "license": "MIT",
+    "keywords": [
+        "vue",
+        "boostrap",
+        "vue component",
+        "vue bootstrap",
+        "bootstrap vue"
+    ],
+    "main": "dist/library.js",
+    "module": "dist/library.mjs",
+    "files": [
+        "dist/*"
+    ],
+    "scripts": {
+        "docs:dev": "vuepress dev docs",
+        "docs:build": "vuepress build docs",
+        "libs:build": "rollup -c"
+    },
+    "peerDependencies": {
+        "uuid": "^8.3.2",
+        "vue": "^3.2.37"
+    },
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^22.0.0",
+        "@rollup/plugin-node-resolve": "^13.3.0",
+        "@vuepress/bundler-webpack": "^2.0.0-beta.48",
+        "@vuepress/plugin-register-components": "^2.0.0-beta.48",
+        "@vuepress/theme-default": "^2.0.0-beta.48",
+        "@vuepress/utils": "^2.0.0-beta.48",
+        "rollup": "^2.75.6",
+        "rollup-plugin-peer-deps-external": "^2.2.4",
+        "rollup-plugin-vue": "^6.0.0",
+        "sass-loader": "^13.0.0",
+        "vuepress": "^2.0.0-beta.46"
+    },
+    "dependencies": {
+        "@popperjs/core": "^2.11.5",
+        "bootstrap": "^5.1.3",
+        "bootstrap-icons": "^1.8.3",
+        "uuid": "^8.3.2",
+        "vue": "^3.2.37"
+    }
 }
