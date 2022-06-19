@@ -6,7 +6,7 @@ const { registerComponentsPlugin } = require('@vuepress/plugin-register-componen
 module.exports = {
   // site config
   lang: 'ru-RU',
-  title: 'Сови',
+  title: 'Сова',
   description: 'Компоненты Vue.js на основе Bootstrap',
 /*
   bundler: webpackBundler({
