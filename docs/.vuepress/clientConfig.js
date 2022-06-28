@@ -1,4 +1,5 @@
-import 'bootstrap/dist/css/bootstrap.css'
+//import 'bootstrap/dist/css/bootstrap.css'
+//import './styles/styles.scss'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import {SPlaceholder} from '../../src/directives/SPlaceholder.js'
 import {SPopover} from '../../src/directives/SPopover';

@@ -1,4 +1,4 @@
-import 'bootstrap/dist/css/bootstrap.min.css'
+//import 'bootstrap/dist/css/bootstrap.min.css'
 //import 'bootstrap-icons/font/bootstrap-icons.css';
 import SLink from "./components/SLink";
 import SBtn from "./components/SBtn.vue";
