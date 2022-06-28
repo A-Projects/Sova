@@ -1,10 +1,12 @@
 <template>
-    <div class="border-bottom mt-2 mb-2"></div>
+    <div>
+        <slot/>
+    </div>
 </template>
 
 <script>
 export default {
-    name: 'SFooterDivider'
+    name: 'SHeaderTitle'
 };
 </script>
 

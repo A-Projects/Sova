@@ -1,12 +1,12 @@
 <template>
-    <footer class="footer" :class="{[`footer-${position}`]: position}">
+    <header class="header" :class="{[`header-${position}`]: position}">
         <slot/>
-    </footer>
+    </header>
 </template>
 
 <script>
 export default {
-    name: 'SFooter',
+    name: 'SHeader',
     props: {
         position: {
             type: String,
@@ -24,16 +24,16 @@ export default {
 </script>
 
 <style scoped>
-.footer {
+.header {
     align-items: center;
     justify-content: center;
 }
 
-.footer-fixed {
+.header-fixed {
     position: fixed;
 }
 
-.footer-sticky {
+.header-sticky {
     position: sticky;
 }
 </style>

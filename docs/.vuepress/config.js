@@ -86,7 +86,7 @@ module.exports = {
                 text: 'Фрагменты',
                 collapsable: true,
                 children: [
-                    //'/fragments/header.md',
+                    '/fragments/header.md',
                     '/fragments/footer.md',
                     //'/fragments/sidebar.md',
                 ]
@@ -143,6 +143,7 @@ module.exports = {
                 SCollapse: path.resolve(__dirname, '../../src/components/SCollapse.vue'),
                 SListGroup: path.resolve(__dirname, '../../src/components/SListGroup.vue'),
                 SListGroupItem: path.resolve(__dirname, '../../src/components/SListGroupItem.vue'),
+                SDivider: path.resolve(__dirname, '../../src/components/Divider/SDivider.vue'),
                 SDropdown: path.resolve(__dirname, '../../src/components/SDropdown.vue'),
                 SDropdownDivider: path.resolve(__dirname, '../../src/components/SDropdownDivider.vue'),
                 SDropdownHeader: path.resolve(__dirname, '../../src/components/SDropdownHeader.vue'),
@@ -218,10 +219,12 @@ module.exports = {
                 SInputGroup: path.resolve(__dirname, '../../src/components/Form/SInputGroup.vue'),
                 SInputGroupText: path.resolve(__dirname, '../../src/components/Form/SInputGroupText.vue'),
                 // Фрагменты
+                SHeader: path.resolve(__dirname, '../../src/fragments/Header/SHeader.vue'),
+                SHeaderBrand: path.resolve(__dirname, '../../src/fragments/Header/SHeaderBrand.vue'),
+                SHeaderTitle: path.resolve(__dirname, '../../src/fragments/Header/SHeaderTitle.vue'),
+                SHeaderToggler: path.resolve(__dirname, '../../src/fragments/Header/SHeaderToggler.vue'),
                 SFooter: path.resolve(__dirname, '../../src/fragments/Footer/SFooter.vue'),
-                SFooterBrand: path.resolve(__dirname, '../../src/fragments/Footer/SFooterBrand.vue'),
-                SFooterDivider: path.resolve(__dirname, '../../src/fragments/Footer/SFooterDivider.vue'),
-                SFooterNav: path.resolve(__dirname, '../../src/fragments/Footer/SFooterNav.vue'),
+                SFooterBrand: path.resolve(__dirname, '../../src/fragments/Footer/SFooterBrand.vue')
             }
         }),
     ],
