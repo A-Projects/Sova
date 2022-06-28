@@ -219,6 +219,9 @@ module.exports = {
                 SInputGroupText: path.resolve(__dirname, '../../src/components/Form/SInputGroupText.vue'),
                 // Фрагменты
                 SFooter: path.resolve(__dirname, '../../src/fragments/Footer/SFooter.vue'),
+                SFooterBrand: path.resolve(__dirname, '../../src/fragments/Footer/SFooterBrand.vue'),
+                SFooterDivider: path.resolve(__dirname, '../../src/fragments/Footer/SFooterDivider.vue'),
+                SFooterNav: path.resolve(__dirname, '../../src/fragments/Footer/SFooterNav.vue'),
             }
         }),
     ],

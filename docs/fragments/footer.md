@@ -6,7 +6,7 @@
 Основной пример
 
 <s-footer>
-    <s-nav class="justify-content-center border-bottom pb-3 mb-3">
+    <s-footer-nav>
         <s-nav-item>
             <s-nav-link href="#" class="text-muted">Home</s-nav-link>
         </s-nav-item>
@@ -22,8 +22,9 @@
         <s-nav-item>
             <s-nav-link href="#" class="text-muted">About</s-nav-link>
         </s-nav-item>
-    </s-nav>
-    <p class="text-center text-muted">&copy; 20xx A-Projects</p>
+    </s-footer-nav>
+    <s-footer-divider/>
+    <s-footer-brand class="text-muted">&copy; 20xx A-Projects</s-footer-brand>
 </s-footer>
 
 ``` vue
